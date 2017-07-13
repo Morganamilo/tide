@@ -1,0 +1,30 @@
+#!/bin/bash
+#This script preparates the system and move the dotfiles to the system
+#Should only be used once in every machine
+
+mkdir ~/Code
+mkdir ~/Documents
+mkdir ~/Downloads
+mkdir ~/Mail
+mkdir ~/Programs
+mkdir ~/Public
+mkdir ~/Repositories
+mkdir ~/Scripts
+mkdir ~/Templates
+mkdir ~/USB
+cp 'Cheatsheet' 'Void Packages' ~/Documents
+cp .bashrc .rtorrent.rc .tmux.conf .vimrc ~/
+cp -r .config ~/
+cp -r .elinks ~/
+cp -r .gnupg ~/
+cp -r .mutt ~/
+cp -r .newsbeuter ~/
+cd ~/
+mv dotfiles ~/Repositories
+sudo rm -r /var/service/agetty-tty2
+sudo rm -r /var/service/agetty-tty3
+sudo rm -r /var/service/agetty-tty4
+sudo rm -r /var/service/agetty-tty5
+sudo rm -r /var/service/agetty-tty6
+sudo xbps-install -S base-devel gdb gnupg2 python wget zip ufw tmux vim ranger nnn elinks mutt irssi rtorrent newsbeuter calcurse htop iftop iotop powertop nethogs rkhunter cmatrix
+sudo ufw enable

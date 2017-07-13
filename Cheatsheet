@@ -1,0 +1,263 @@
+##C stands for Control, S stands for Shift
+#system
+
+
+ide  =>  Open tmux with pre-configured IDE
+
+sysinfo   =>  Display system information
+battery   =>  Show battery level
+bright    =>  Show brightness menu
+vibright  =>  Edit brightness level
+lock      =>  Lock the screen with a password (logout tmux with "C-a + d" first)
+
+mntusb   =>  Mount USB drive storage and acess its files
+umntusb  =>  Unmount the USB drive storage
+
+poweroff  =>  Power off the system
+reboot    =>  Reboot the system
+
+
+#vim
+
+
+0   =>  Moves to the beginning of the line
+$   =>  Moves to the end of the line
+w   =>  Moves forward one word
+b   =>  Moves backward one word
+gg  =>  Moves to the beginning of the file
+G   =>  Moves to the end of the file
+
+d + any of the above  =>  Cuts up to...
+
+i    =>  Enters insert mode in the current character
+a    =>  Enters insert mode in the next character
+Esc  =>  Quits insert mode
+
+dd  =>  Cuts a line
+yy  =>  Copies a line
+p   =>  Pastes in next line
+P   =>  Pastes in current line
+
+u    =>  Undo
+C-r  =>  Redo
+
+v    =>  Highlights one character at a time
+V    =>  Highlights one line at a time
+C-v  =>  Highlights by columns
+d    =>  Cuts highlighted text
+y    =>  Copies highlighted text
+
+/text  =>  Searches for text in the document
+n      =>  Moves to the next instance of the search
+N      =>  Moves to the previous instance of the search
+15     =>  Jumps 15 lines
+:15    =>  Go to line 15
+
+%s/text/new text/g  =>  Replaces all text in the document with new text
+
+
+:syntax on/off        =>  Enables or disables syntax colors
+:set number/nonumber  =>  Enables or disables line numbering
+
+:w   =>  Writes to the file
+:q   =>  Quits, must save first
+:wq  =>  Write and quit at the same time
+:q!  =>  Quits without saving
+
+
+#ranger
+
+
+Space  =>  Select
+
+dd  =>  Cut
+yy  =>  Copy
+pp  =>  Paste
+cw  =>  Rename
+/   =>  Search
+r   =>  Open with..
+i   =>  Display file
+t   =>  Mark
+zh  =>  Show hidden files
+q   =>  Quit tab, if last tab it will quit ranger
+
+:delete      =>  Delete
+:reset       =>  Reload all files
+:bulkrename  =>  Mass renaming through text editor
+
+Alt + Number      =>  Switch to a new tab
+Alt + Arrow Keys  =>  Navigate between tabs
+
+gg  =>  Move to the beggining of the directory
+G   =>  Move to the end of the directory
+Page Up  =>  Move up alot
+Page Dn  =>  Move down alot
+
+
+#tmux
+
+
+C-a + |   =>  Open horizontal pane
+C-a + "   =>  Open vertical pane
+C + d     =>  Close current pane
+C-a + c   =>  Open new window
+C-a + l   =>  Go to last active window
+
+C + Arrow Keys         =>  Navigate between panes
+S + Arrow Keys         =>  Navigate between windows
+C-a + Numbers          =>  Navigate to chosen window
+C-a + o                =>  Switch position of panes
+Hold C-a + Arrow Keys  =>  Resize panes
+
+C-a + Esc  =>  Enter vim mode
+Escape     =>  Quit vim mode
+C + p      =>  Paste text yanked through vim mode
+
+C + s  => Freeze pane
+C + q  => Unfreeze pane
+
+C-a + d                      =>  Logout current session
+C-a + C-a + d                =>  Logout remote session inside SSH
+tmux attach (-t name)        =>  Log into an unactive session
+tmux kill-session (-t name)  =>  Closes an unactive session
+tmux ls                      =>  List all active/unactive sessions
+
+
+#rtorrent
+
+
+Enter       =>  Add torrent using URL or file path
+Backspace   =>  Add torrent using URL or file path and starts download
+Arrow keys  =>  Navigate through torrent
+C + q       =>  Quit
+
+C + s  => Starts torrent
+C + d  => Stops active torrent, use again to close the torrent
+C + r  => Checks the hash of a torrent
+
+
+#nnn
+
+
+n  =>  Start nnn
+~  =>  Go to home directory
+
+/  =>  Search
+.  =>  Show hidden files
+d  =>  Toggle detailed mode
+e  =>  Open in editor
+p  =>  Open in pager
+q  =>  Quit
+
+S-d  =>  Show file details
+S-q  =>  Quit and change directory
+
+
+
+#irssi
+
+
+CONFIGURATION:
+
+/network list             =>  Lists all known networks
+/network add NetworkName  =>  Set up a new network
+
+/server list                                         =>  Lists all known servers
+/channel list                                        =>  Lists all known channels
+/server add (-auto) -network NetworkName server-url  =>  Set up a new server from the said network
+/channel add (-auto) #channelname NetworkName        =>  Automatically joins said channel on start
+
+/set hilight_nick_matches_everywhere ON =>  Hilights all messages mentioning me
+/help <network/server/channel>  =>  For more commands
+
+USAGE:
+
+Alt + Numbers  =>  Moves between channels and sessions
+C + X          =>  Changes server used to join channels
+
+/connect NetworkName       =>  Connects to a network
+/disconnect (NetworkName)  =>  Disconnects from a network or from the selected network
+/reconnect all             =>  Tries to reconnect to all networks where you were disconnected
+/join #channel (password)  =>  Joins a channel
+/part                      =>  Leaves the selected channel
+/quit                      =>  Quits IRSSI
+
+/msg username Your Message Here  =>  Sends a message to another user
+/query username                  =>  Opens/closes a private chat window with another user
+/whois username                  =>  Shows information about another user
+
+/hilight word    =>  Hilights all messages mentioning the said word
+/dehilight word  =>  Undo hilight of the said word
+
+/names         =>  Lists all users in the current channel
+/clear         =>  Clears all text in the channel
+
+
+#gnupg
+
+
+gpg --gen-key       => Generate a key
+gpg --full-gen-key  => Generate a key with more details
+
+gpg --list-keys                     =>  List all public keys
+gpg --list-secret-keys              =>  List all private keys
+gpg --delete-key "username"         =>  Delete a public key
+gpg --delete-secret-key "username"  =>  Delete a private key
+
+gpg --keyserver <serverurl> --send-keys <KeyID>  =>  Send a public key to a keyserver
+gpg --keyserver <serverurl> --recv-key <KeyID>   =>  Get a public key from a keyserver
+
+gpg --import file.asc                                           =>  Import a public key
+gpg --alow-secret-key-import --import file.asc                  =>  Import an unencrypted private key
+gpg -ao file.asc --export "username"                            =>  Export a public key
+gpg -a --export-secret-keys "username" | gpg -aco file.asc.gpg  =>  Export an encrypted private key
+gpg -ao file.asc --gen-revoke "username"                        =>  Create a revocation certificate
+
+gpg file.gpg     =>  Decrypts a file
+gpg -d file.gpg  =>  Decrypts only the output which is not saved in disk
+gpg -c file      =>  Encrypts a file with a password
+gpg -e file      =>  Encrypts a file with your main private key
+
+gpg -e (-u "sender") (-r "receiver") file  =>  Encrypts a file with one or more keys
+
+GPG WITH MUTT:
+
+p  =>  Use on the compose screen to bring the PGP options
+
+
+#git
+
+
+git init          =>  Create new repo in current directory
+git clone <path>  =>  Clone repo from local, URL, SSH, etc
+
+git status  =>  Show repo status
+
+git add <file>          =>  Stage changes
+git add *               =>  Stage all changes
+git reset HEAD <file>   =>  Unstage changes
+git checkout -- <file>  =>  Discard unstaged changes
+git rm <file>           =>  Remove a file
+
+git commit -m "Message!"  =>  Commit all staged changes
+
+git branch (-a)         =>  List all branches, can also list hidden ones
+git branch <branch>     =>  Create new branch based on current branch
+git branch -d <branch>  =>  Delete a branch
+git checkout <branch>   =>  Switch to another branch
+
+git remote add origin <path>  =>  Connect local repo to remote repo
+git fetch                     =>  Warn local repo about remote changes
+git pull                      =>  Update local branch with remote changes and merges them
+git push (--all)              =>  Push local branch to remote branch, can also push all branches including new ones
+
+git merge <branch>  =>  Merge changes from another branch into the current branch
+git diff            =>  Show unstaged changes in current branch
+git diff --staged   =>  Show staged changes in current branch
+git diff <branch>   =>  Show differences between current branch and specified branch
+
+git log                             =>  Get all commit IDs
+git tag <version> <commit ID>       =>  Create a version up to the specified commit ID
+git diff <commit ID> (<file>)       =>  Show changes made to a branch or a file since that commit ID
+git reset <commit ID> (<file>)      =>  Reset a branch or a file up to that commit ID
+git checkout <commit ID>            =>  Switch to a point that goes up to that commit ID

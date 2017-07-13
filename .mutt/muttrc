@@ -1,0 +1,22 @@
+set realname = "REAL NAME HERE"
+set imap_user = "EMAIL HERE"
+set folder = "IMAPS OR POP SERVER HERE"
+set smtp_url = "SMTPS SERVER HERE"
+set from = $imap_user
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record = +Sent
+set ssl_force_tls = yes
+set imap_keepalive = 600
+set mail_check = 60
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+source ~/.mutt/gpg.rc
+
+set pgp_sign_as = "GPG KEY ID HERE"
+set pgp_use_gpg_agent = yes
+set pgp_timeout = 3600
+
+bind compose p pgp-menu

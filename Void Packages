@@ -1,0 +1,27 @@
+already installed: base-system, grub, openssh, bc, unzip
+
+base-devel
+tmux
+gdb
+python
+vim
+git
+ranger
+htop
+iftop
+iotop
+powertop
+nethogs
+rkhunter
+newsbeuter
+calcurse
+gnupg2
+wget
+zip
+cmatrix
+nnn
+ufw
+elinks
+rtorrent
+mutt
+irssi
