@@ -25,11 +25,11 @@ ide ()
 bright ()
 {
 	echo "Minimum:"
-	cat /sys/class/backlight/intel_backlight/bl_power
+	cat /sys/class/backlight/acpi_video0/bl_power
 	echo "Actual:"
-	cat /sys/class/backlight/intel_backlight/actual_brightness
+	cat /sys/class/backlight/acpi_video0/actual_brightness
 	echo "Maximum:"
-       	cat /sys/class/backlight/intel_backlight/max_brightness
+       	cat /sys/class/backlight/acpi_video0/max_brightness
 	echo "Use vibright to change brightness"
 }
 
@@ -65,8 +65,8 @@ n()
 }
 
 alias back='tmux attach -t ide'
-alias battery='cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status'
-alias vibright='sudo vim /sys/class/backlight/intel_backlight/brightness'
+alias battery='cat /sys/class/power_supply/BAT1/capacity /sys/class/power_supply/BAT1/status'
+alias vibright='sudo vim /sys/class/backlight/acpi_video0/brightness'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
 alias gpg='gpg2'
