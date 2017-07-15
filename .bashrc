@@ -64,6 +64,21 @@ n()
         fi
 }
 
+wifi_add ()
+{
+	echo 'Enter the SSID:'
+	read $SSID
+	echo 'Enter the passphrase:'
+	read $PASS
+	echo 'Adding Wi-Fi network...'
+	sudo wpa_passphrase $SSID $PASS | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf &&
+	echo 'Added Wi-Fi network succesfully!'
+}
+
+alias wifi_status='sudo iw wlp3s0 link'
+alias wifi_list='sudo iw dev wlp3s0 scan | grep -i ssid'
+alias wifi_added='sudo cat /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wifi_connect='sudo wpa_supplicant -B -D wext -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
 alias back='tmux attach -t ide'
 alias battery='cat /sys/class/power_supply/BAT1/capacity /sys/class/power_supply/BAT1/status'
 alias vibright='sudo vim /sys/class/backlight/acpi_video0/brightness'

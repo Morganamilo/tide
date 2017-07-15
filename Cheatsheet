@@ -1,4 +1,3 @@
-##C stands for Control, S stands for Shift
 #system
 
 
@@ -9,6 +8,12 @@ battery   =>  Show battery level
 bright    =>  Show brightness menu
 vibright  =>  Edit brightness level
 lock      =>  Lock the screen with a password (logout tmux with "C-a + d" first)
+
+wifi_connect  =>  Start connection to any known wireless network
+wifi_status   =>  Show current status for wireless device
+wifi_list     =>  List nearby wireless networks
+wifi_add      =>  Add a new wireless network
+wifi_added    =>  Show all known wireless networks
 
 mntusb   =>  Mount USB drive storage and acess its files
 umntusb  =>  Unmount the USB drive storage
