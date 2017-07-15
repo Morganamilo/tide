@@ -20,7 +20,7 @@ cp -r .gnupg ~/
 cp -r .mutt ~/
 cp -r .newsbeuter ~/
 cd ~/
-mv dotfiles ~/Repositories
+mv tide ~/Repositories
 sudo rm -r /var/service/agetty-tty2
 sudo rm -r /var/service/agetty-tty3
 sudo rm -r /var/service/agetty-tty4
