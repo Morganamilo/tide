@@ -1,0 +1,13 @@
+control keycode 105=F100
+string F100="\033[1;5D"
+control keycode 106=F101
+string F101="\033[1;5C"
+control keycode 103=F102
+string F102="\033[1;5A"
+control keycode 108=F103
+string F103="\033[1;5B"
+
+shift keycode 105=F104
+string F104="\033[1;2D"
+shift keycode 106=F105
+string F105="\033[1;2C"

@@ -19,8 +19,7 @@ cp -r .elinks ~/
 cp -r .gnupg ~/
 cp -r .mutt ~/
 cp -r .newsbeuter ~/
-cd ~/
-mv tide ~/Repositories
+sudo cp extrakeys rc.local /etc/
 sudo rm -r /var/service/agetty-tty2
 sudo rm -r /var/service/agetty-tty3
 sudo rm -r /var/service/agetty-tty4
@@ -28,3 +27,5 @@ sudo rm -r /var/service/agetty-tty5
 sudo rm -r /var/service/agetty-tty6
 sudo xbps-install -S base-devel gdb gnupg2 python wget zip ufw tmux vim ranger nnn elinks mutt irssi rtorrent newsbeuter calcurse htop iftop iotop powertop nethogs rkhunter cmatrix
 sudo ufw enable
+cd ~/
+mv tide ~/Repositories
