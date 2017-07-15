@@ -9,7 +9,8 @@ Terminal IDE: A minimal pre-configured Void Linux install with no GUI.
 4- Clone this repository
 5- Do a chmod +x for the install and update scripts
 6- Run the install script
-7- Change .mutt/muttrc to use your desired email address and email server
+7- Edit ~/.bashsys to correctly fit your system modules
+8- Change ~/.mutt/muttrc to use your desired email address and email server
 
 Enjoy! You can use the update script if you want to keep up with the new changes in this repository.
 
@@ -19,4 +20,4 @@ All installed packages are listed in "Void Packages" (dependencies are not liste
 
 There are also a few handy bash commands which you can use for easily setting up an IDE, mounting USB devices, showing battery, system brightness, screenlocking, etc.
 
-Please note that the system brightness script was built for Intel CPUs, so it might not work with AMDs or other CPU manufacturers.
+Please note that for some of the functionality to work you need the proper names of your system modules, just follow the instructions in the .bashsys file for how to get them.

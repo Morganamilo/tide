@@ -6,7 +6,10 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+source ~/.bashsys
+
 export EDITOR=vim
+export NNN_TMPFILE="/tmp/nnn"
 
 ide ()
 {
@@ -25,11 +28,11 @@ ide ()
 bright ()
 {
 	echo "Minimum:"
-	cat /sys/class/backlight/acpi_video0/bl_power
+	cat /sys/class/backlight/$BACKLIGHT/bl_power
 	echo "Actual:"
-	cat /sys/class/backlight/acpi_video0/actual_brightness
+	cat /sys/class/backlight/$BACKLIGHT/actual_brightness
 	echo "Maximum:"
-       	cat /sys/class/backlight/acpi_video0/max_brightness
+       	cat /sys/class/backlight/$BACKLIGHT/max_brightness
 	echo "Use vibright to change brightness"
 }
 
@@ -46,14 +49,6 @@ umntusb ()
 	echo "Unmounted successfully"
 }
 
-lock ()
-{
-	cmatrix
-	vlock
-}
-
-export NNN_TMPFILE="/tmp/nnn"
-
 n()
 {
         nnn "$@"
@@ -64,23 +59,29 @@ n()
         fi
 }
 
-wifi_add ()
+lock ()
 {
-	echo 'Enter the SSID:'
-	read $SSID
-	echo 'Enter the passphrase:'
-	read $PASS
-	echo 'Adding Wi-Fi network...'
-	sudo wpa_passphrase $SSID $PASS | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf &&
-	echo 'Added Wi-Fi network succesfully!'
+	cmatrix
+	vlock
 }
 
-alias wifi_status='sudo iw wlp3s0 link'
-alias wifi_list='sudo iw dev wlp3s0 scan | grep -i ssid'
+wifi_add ()
+{
+	echo "Enter the SSID:"
+	read $SSID
+	echo "Enter the passphrase:"
+	read $PASS
+	echo "Adding Wi-Fi network..."
+	sudo wpa_passphrase $SSID $PASS | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf &&
+	echo "Added Wi-Fi network succesfully!"
+}
+
+alias wifi_status='sudo iw $WIRELESS link'
+alias wifi_list='sudo iw dev $WIRELESS scan | grep -i ssid'
 alias wifi_added='sudo cat /etc/wpa_supplicant/wpa_supplicant.conf'
-alias wifi_connect='sudo wpa_supplicant -B -D wext -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wifi_connect='sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf'
 alias back='tmux attach -t ide'
-alias battery='cat /sys/class/power_supply/BAT1/capacity /sys/class/power_supply/BAT1/status'
+alias battery='cat /sys/class/power_supply/$BAT/capacity /sys/class/power_supply/$BAT/status'
 alias vibright='sudo vim /sys/class/backlight/acpi_video0/brightness'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
