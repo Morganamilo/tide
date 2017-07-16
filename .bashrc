@@ -38,7 +38,7 @@ bright ()
 
 mntusb ()
 {
-	sudo mount /dev/sdb1 ~/USB &&
+	sudo mount /dev/sdb1 ~/USB || sudo mount /dev/sdc1 ~/USB &&
 	sudo ranger ~/USB &&
 	echo "Don´t forget to unmount with umntusb once you´re done"
 }
@@ -80,6 +80,7 @@ alias wifi_status='sudo iw $WIRELESS link'
 alias wifi_list='sudo iw dev $WIRELESS scan | grep -i ssid'
 alias wifi_added='sudo cat /etc/wpa_supplicant/wpa_supplicant.conf'
 alias wifi_connect='sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf'
+alias lsusb='lsblk'
 alias back='tmux attach -t ide'
 alias battery='cat /sys/class/power_supply/$BAT/capacity /sys/class/power_supply/$BAT/status'
 alias vibright='sudo vim /sys/class/backlight/acpi_video0/brightness'
