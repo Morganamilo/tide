@@ -19,7 +19,7 @@ cp -r .elinks ~/
 cp -r .gnupg ~/
 cp -r .mutt ~/
 cp -r .newsbeuter ~/
-sudo cp extrakeys rc.local /etc/
+sudo cp issue extrakeys rc.local /etc/
 sudo rm -r /var/service/agetty-tty2
 sudo rm -r /var/service/agetty-tty3
 sudo rm -r /var/service/agetty-tty4
