@@ -7,6 +7,7 @@ python
 vim
 git
 ranger
+tlp
 htop
 iftop
 iotop
