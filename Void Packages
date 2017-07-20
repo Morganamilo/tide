@@ -3,6 +3,7 @@ already installed: base-system, grub, openssh, bc, unzip
 base-devel
 tmux
 gdb
+ufw
 python
 vim
 git
@@ -16,13 +17,13 @@ nethogs
 rkhunter
 newsbeuter
 calcurse
-gnupg2
+rsync
 wget
 zip
 cmatrix
-nnn
-ufw
 elinks
 rtorrent
 mutt
 irssi
+gnupg2
+nnn
