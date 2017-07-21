@@ -15,9 +15,11 @@ wifi_list     =>  List nearby wireless networks
 wifi_add      =>  Add a new wireless network
 wifi_added    =>  Show all known wireless networks
 
-lsusb    =>  List names and details for all plugged USB devices
-mntusb   =>  Mount USB drive storage and acess its files
-umntusb  =>  Unmount the USB drive storage
+lsusb      =>  List names and details for all plugged USB devices
+mntusb     =>  Mount USB drive storage and access its files
+umntusb    =>  Unmount the USB drive storage
+flashusb   =>  Flash an ISO into the USB drive
+formatusb  =>  Format the USB drive
 
 poweroff  =>  Power off the system
 reboot    =>  Reboot the system
