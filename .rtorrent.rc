@@ -3,19 +3,19 @@
 # uncomment the options you wish to enable.
 
 # Maximum and minimum number of peers to connect to per torrent.
-min_peers = 1
+min_peers = 50
 max_peers = 100
 
 # Same as above but for seeding completed torrents (-1 = same as downloading)
-min_peers_seed = 1
+min_peers_seed = 25
 max_peers_seed = 50
 
 # Maximum number of simultanious uploads per torrent.
-max_uploads = 15
+max_uploads = 25
 
 # Global upload and download rate in KiB. "0" for unlimited.
 download_rate = 0
-upload_rate = 150
+upload_rate = 250
 
 # Port range to use for listening.
 port_range = 49164-49264
@@ -39,10 +39,15 @@ encryption = allow_incoming,try_outgoing,enable_retry
 # Default directory to save the downloaded torrents.
 directory = ~/Public
 
+# Default session directory. Make sure you don't run multiple instance
+# of rtorrent using the same session directory. Perhaps using a
+# relative path?
+session = ~/Torrents/.session
+
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-#schedule = untied_directory,5,5,stop_untied=
-schedule = watch_directory,1,1,load_start=~/Public/*.torrent
+schedule = untied_directory,1,30,stop_untied=~/Torrents/*.torrent
+schedule = watch_directory,1,30,load_start=~/Torrents/*.torrent
 
 # Close torrents when diskspace is low.
 #schedule = low_diskspace,5,60,close_low_diskspace=100M
@@ -77,8 +82,3 @@ schedule = watch_directory,1,1,load_start=~/Public/*.torrent
 # Enable peer exchange (for torrents not marked private)
 #
 #peer_exchange = yes
-
-# Default session directory. Make sure you don't run multiple instance
-# of rtorrent using the same session directory. Perhaps using a
-# relative path?
-#session = ./session
