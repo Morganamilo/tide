@@ -11,6 +11,7 @@ mkdir ~/Public
 mkdir ~/Repositories
 mkdir ~/Scripts
 mkdir ~/Templates
+mkdir ~/Torrents
 mkdir ~/USB
 cp 'Cheatsheet' 'Void Packages' ~/Documents
 cp .bashrc .bashsys .rtorrent.rc .tmux.conf .vimrc ~/
