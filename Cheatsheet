@@ -21,6 +21,7 @@ umntusb    =>  Unmount the USB drive storage
 flashusb   =>  Flash an ISO into the USB drive
 formatusb  =>  Format the USB drive
 
+startx    =>  Start the GUI mode
 poweroff  =>  Power off the system
 reboot    =>  Reboot the system
 

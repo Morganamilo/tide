@@ -14,7 +14,7 @@ Terminal IDE: A minimal pre-configured Void Linux install with optional GUI.
 
 Enjoy! You can use the update script if you want to keep up with the new changes in this repository.
 
-If you wish you can also use the upgrade2gui script to get a GUI mode with better support for images, videos and web browsing.
+If you wish you can also use the upgrade2gui script to get a GUI mode with better support for images, videos and web browsing. After that make sure to do the proper changes in the very end of the .xinitrc file to fit your needs.
 
 ##Usage
 
