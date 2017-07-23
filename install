@@ -15,6 +15,7 @@ mkdir ~/Torrents
 mkdir ~/USB
 cp 'Cheatsheet' 'Void Packages' ~/Documents
 cp .bashrc .bashsys .rtorrent.rc .tmux.conf .vimrc ~/
+cp .i3status.conf .wallpaper.png .xinitrc .Xresources ~/
 cp -r .config ~/
 cp -r .elinks ~/
 cp -r .gnupg ~/

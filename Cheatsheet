@@ -269,3 +269,13 @@ git tag <version> <commit ID>       =>  Create a version up to the specified com
 git diff <commit ID> (<file>)       =>  Show changes made to a branch or a file since that commit ID
 git reset <commit ID> (<file>)      =>  Reset a branch or a file up to that commit ID
 git checkout <commit ID>            =>  Switch to a point that goes up to that commit ID
+
+
+#ffmpeg
+
+
+ffplay video.mp4  =>  Play a video
+
+p      =>  Toggle pause/resume video
+Left   =>  Go back in the video
+Right  =>  Go forward in the video

@@ -1,5 +1,5 @@
 #tide
-Terminal IDE: A minimal pre-configured Void Linux install with no GUI.
+Terminal IDE: A minimal pre-configured Void Linux install with optional GUI.
 
 ##Installation
 
@@ -13,6 +13,8 @@ Terminal IDE: A minimal pre-configured Void Linux install with no GUI.
 8- Change ~/.mutt/muttrc to use your desired email address and email server
 
 Enjoy! You can use the update script if you want to keep up with the new changes in this repository.
+
+If you wish you can also use the upgrade2gui script to get a GUI mode with better support for images, videos and web browsing.
 
 ##Usage
 

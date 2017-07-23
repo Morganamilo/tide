@@ -27,3 +27,16 @@ mutt
 irssi
 gnupg2
 nnn
+
+##WITH GUI UPGRADE
+xorg
+i3-gaps
+i3status
+i3lock
+dmenu
+rxvt-unicode
+screenfetch
+scrot
+feh
+ffmpeg
+qutebrowser
