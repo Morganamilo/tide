@@ -12,5 +12,3 @@ BACKLIGHT='YOUR MODULE NAME HERE'
 #In order to find your wireless module name, run the command 'ip address'
 #Example names: wlan0, wps, etc
 WIRELESS='YOUR MODULE NAME HERE'
-
-
