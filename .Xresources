@@ -9,7 +9,7 @@ URxvt.inheritPixmap: true
 URxvt.transparent: true
 URxvt.shading: 30
 URxvt.perl-ext-common:default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-launcher: /usr/bin/qutebrowser
 URxvt.matcher.button: 1
 
 *fading: 35
