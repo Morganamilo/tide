@@ -122,6 +122,7 @@ Hold C-a + Arrow Keys  =>  Resize panes
 
 C-a + Esc  =>  Enter vim mode
 Escape     =>  Quit vim mode
+C-v + v    =>  Highlights by columns while in vim mode
 C + p      =>  Paste text yanked through vim mode
 
 C + s  => Freeze pane

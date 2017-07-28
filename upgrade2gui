@@ -1,4 +1,5 @@
 #!/bin/bash
 #This script will download the packages necessary for GUI mode
 
-sudo xbps-install -S w3m xorg alsa-utils i3-gaps i3status i3lock dmenu rxvt-unicode screenFetch scrot feh ffmpeg qutebrowser
+sudo xbps-remove vim
+sudo xbps-install -S w3m xorg alsa-utils i3-gaps i3status i3lock dmenu rxvt-unicode screenFetch scrot feh ffmpeg gvim qutebrowser
