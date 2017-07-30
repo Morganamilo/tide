@@ -8,3 +8,4 @@ cp .i3status.conf .xinitrc .Xresources ~/
 cp -r .config ~/
 cp -r .elinks ~/
 cp -r .gnupg ~/
+cp -r .ncmpcpp ~/

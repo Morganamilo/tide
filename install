@@ -27,7 +27,7 @@ sudo rm -r /var/service/agetty-tty3
 sudo rm -r /var/service/agetty-tty4
 sudo rm -r /var/service/agetty-tty5
 sudo rm -r /var/service/agetty-tty6
-sudo xbps-install -S base-devel gdb gnupg2 python wget zip tlp ufw tmux vim ranger nnn elinks mutt irssi rsync rtorrent newsbeuter calcurse htop iftop iotop powertop nethogs rkhunter cmatrix cyrus-sasl-modules
+sudo xbps-install -S base-devel alsa-utils gdb gnupg2 python wget zip tlp ufw tmux vim ranger nnn elinks mutt irssi rsync rtorrent mpd ncmpcpp newsbeuter calcurse htop iftop iotop powertop nethogs rkhunter cmatrix cyrus-sasl-modules
 sudo ln -s /etc/sv/ufw /var/service/
 sudo ln -s /etc/sv/tlp /var/service/
 cd ~/

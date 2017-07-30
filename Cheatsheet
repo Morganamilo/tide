@@ -148,6 +148,25 @@ C + d  => Stops active torrent, use again to close the torrent
 C + r  => Checks the hash of a torrent
 
 
+#ncmpcpp
+
+
+mpc  =>  Start music player
+mpk  =>  Stop music
+
+1 to 8  => Change visual mode
+\       => Switch between classic and alternative views
+
+Arrow Keys  =>  Browse through your tracks
+Enter       =>  Start playing the tracks
+
+p    =>  Toggle pause/unpause track
+</>  =>  Play previous/next track
+
+r  =>  Toggle repeat mode
+z  =>  Toggle random mode
+
+
 #nnn
 
 
@@ -280,6 +299,6 @@ git checkout <commit ID>            =>  Switch to a point that goes up to that c
 
 ffplay video.mp4  =>  Play a video
 
-p      =>  Toggle pause/resume video
+p      =>  Toggle pause/unpause video
 Left   =>  Go back in the video
 Right  =>  Go forward in the video

@@ -1,6 +1,7 @@
 already installed: base-system, grub, openssh, bc, unzip
 
 base-devel
+alsa-utils
 tmux
 gdb
 ufw
@@ -15,6 +16,8 @@ iotop
 powertop
 nethogs
 rkhunter
+mpd
+ncmpcpp
 newsbeuter
 calcurse
 wget
@@ -31,7 +34,6 @@ nnn
 ##WITH GUI UPGRADE
 w3m
 xorg
-alsa-utils
 i3-gaps
 i3status
 i3lock
