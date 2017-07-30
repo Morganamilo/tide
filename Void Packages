@@ -2,14 +2,14 @@ already installed: base-system, grub, openssh, bc, unzip
 
 base-devel
 alsa-utils
-tmux
-gdb
 ufw
+tlp
+gdb
+tmux
 python
 vim
 git
 ranger
-tlp
 htop
 iftop
 iotop
