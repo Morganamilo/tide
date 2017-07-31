@@ -21,6 +21,7 @@ cp -r .config ~/
 cp -r .elinks ~/
 cp -r .gnupg ~/
 cp -r .mutt ~/
+cp -r .ncmpcpp ~/
 cp -r .newsbeuter ~/
 sudo cp issue extrakeys rc.local /etc/
 sudo rm -r /var/service/agetty-tty2

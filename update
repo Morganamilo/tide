@@ -4,7 +4,7 @@
 git pull
 cp 'Cheatsheet' 'Void Packages' ~/Documents
 cp .bashrc .rtorrent.rc .tmux.conf .vimrc ~/
-cp .i3status.conf .xinitrc .Xresources ~/
+cp .i3status.conf .Xresources ~/
 cp -r .config ~/
 cp -r .elinks ~/
 cp -r .gnupg ~/
