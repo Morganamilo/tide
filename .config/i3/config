@@ -157,10 +157,15 @@ bar {
         status_command i3status
 }
 
+# Below there is configuration that is exclusive to i3-gaps
+
+# Remove titlebar and add borders using given amount of pixels
 for_window [class="^.*"] border pixel 1
 
+# Add gaps
 gaps inner 11
 gaps outer 11
 
+# Gaps and borders will only be used if there is more than one container on the workspace
 smart_gaps on
 smart_borders on
