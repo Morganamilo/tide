@@ -1,14 +1,14 @@
-#These are the necessary module names for getting battery, brightness and wireless commands working in your system
-#You should edit those to fit your system's needs
+# These are the necessary module names for getting battery, brightness and wireless commands working in your system
+# You should edit those to fit your system's needs
 
-#In order to find your battery module name, check folder /sys/class/power_supply
-#Example names: BAT0, BAT1, etc
+# In order to find your battery module name, check folder /sys/class/power_supply
+# Example names: BAT0, BAT1, etc
 BAT='YOUR MODULE NAME HERE'
 
-#In order to find your backlight module name, check folder /sys/class/backlight
-#Example names: acpi_video0, intel_backlight, nv_backlight, etc
+# In order to find your backlight module name, check folder /sys/class/backlight
+# Example names: acpi_video0, intel_backlight, nv_backlight, etc
 BACKLIGHT='YOUR MODULE NAME HERE'
 
-#In order to find your wireless module name, run the command 'ip address'
-#Example names: wlan0, wps, etc
+# In order to find your wireless module name, run the command 'ip address'
+# Example names: wlan0, wps, etc
 WIRELESS='YOUR MODULE NAME HERE'

@@ -2,6 +2,7 @@ set realname = "REAL NAME HERE"
 set imap_user = "EMAIL HERE"
 set folder = "IMAPS OR POP SERVER HERE"
 set smtp_url = "SMTPS SERVER HERE"
+
 set from = $imap_user
 set spoolfile = +INBOX
 set postponed = +Drafts

@@ -1,32 +1,32 @@
-#Basic URxvt settings
+# Basic URxvt settings
 URxvt.font: 9x15
 URxvt.cursorBlink: true
 URxvt.saveLines: 5000
 
-#Disable scrollbar
+# Disable scrollbar
 URxvt.scrollBar: false
 URxvt.mouseWheelScrollPage: false
 
-#Enable transparency
+# Enable transparency
 URxvt.inheritPixmap: true
 URxvt.transparent: true
 URxvt.shading: 30
 
-#Clickable URLs
+# Clickable URLs
 URxvt.perl-ext-common:default,matcher
 URxvt.url-launcher: /usr/bin/qutebrowser
 URxvt.matcher.button: 1
 
-#Use Control-Shift-V/C for X clipboard
+# Use Control-Shift-V/C for X clipboard
 URxvt.iso14755: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-#Fading scheme
+# Fading scheme
 *fading: 25
 *fadeColor: black
 
-#Terminal theme
+# Terminal theme
 *background: black
 *foreground: grey
 
