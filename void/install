@@ -15,16 +15,19 @@ mkdir ~/Templates
 mkdir ~/Torrents
 mkdir ~/Torrents/.session
 mkdir ~/USB
-cp 'Cheatsheet' 'Void Packages' ~/Documents
+cd ..
+cp 'Cheatsheet' 'Void Packages' 'Arch Packages' ~/Documents
 cp .bashrc .bashsys .rtorrent.rc .tmux.conf .vimrc ~/
-cp .i3status.conf .xinitrc .Xresources ~/
+cp .i3status.conf .wallpaper.png .xinitrc .Xresources ~/
 cp -r .config ~/
 cp -r .elinks ~/
 cp -r .gnupg ~/
 cp -r .mutt ~/
 cp -r .ncmpcpp ~/
 cp -r .newsbeuter ~/
-sudo cp issue extrakeys rc.local /etc/
+sudo cp extrakeys /etc/
+cd void/root
+sudo cp issue rc.local /etc/
 sudo rm -r /var/service/agetty-tty2
 sudo rm -r /var/service/agetty-tty3
 sudo rm -r /var/service/agetty-tty4

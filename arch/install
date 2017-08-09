@@ -1,0 +1,42 @@
+#!/bin/bash
+#This script preparates the system and move the dotfiles to the system
+#Should only be used once in every machine
+
+mkdir ~/Code
+mkdir ~/Documents
+mkdir ~/Downloads
+mkdir ~/Mail
+mkdir ~/Music
+mkdir ~/Programs
+mkdir ~/Public
+mkdir ~/Repositories
+mkdir ~/Scripts
+mkdir ~/Templates
+mkdir ~/Torrents
+mkdir ~/Torrents/.session
+mkdir ~/USB
+cd ..
+cp 'Cheatsheet' 'Void Packages' 'Arch Packages' ~/Documents
+cp .bashrc .bashsys .rtorrent.rc .tmux.conf .vimrc ~/
+cp .i3status.conf .wallpaper.png .xinitrc .Xresources ~/
+cp -r .config ~/
+cp -r .elinks ~/
+cp -r .gnupg ~/
+cp -r .mutt ~/
+cp -r .ncmpcpp ~/
+cp -r .newsbeuter ~/
+sudo cp extrakeys /etc/
+cd arch/root
+sudo cp issue /etc/
+sudo cp rc.local /usr/local/sbin/
+sudo cp rc-local.service /etc/systemd/system/
+sudo systemctl enable rc-local
+sudo pacman -S base-devel alsa-utils gdb gnupg python wget bc zip unzip tlp ufw tmux vim ranger elinks mutt irssi rsync rtorrent mpd ncmpcpp youtube-dl newsbeuter calcurse htop iftop iotop powertop nethogs rkhunter cmatrix openssh
+sudo systemctl enable ufw
+sudo systemctl enable tlp
+cd ~/Repositories
+git clone https://aur.archlinux.org/nnn.git
+cd nnn
+makepkg -si
+cd ~/
+mv dotfiles ~/Repositories

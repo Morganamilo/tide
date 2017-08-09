@@ -2,7 +2,7 @@
 #This script will pull new changes from the dotfiles repo to the system
 
 git pull
-cp 'Cheatsheet' 'Void Packages' ~/Documents
+cp 'Cheatsheet' 'Void Packages' 'Arch Packages' ~/Documents
 cp .bashrc .rtorrent.rc .tmux.conf .vimrc ~/
 cp .i3status.conf .Xresources ~/
 cp -r .config ~/
