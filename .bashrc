@@ -13,14 +13,14 @@ export NNN_TMPFILE="/tmp/nnn"
 
 ide ()
 {
-	tmux new-session -s ide -d
-	tmux send-keys -t ide 'cd ~/Repositories' C-j
-	tmux send-keys -t ide 'ranger' C-j
-	tmux split-window -h -p 77
-	tmux send-keys -t ide 'cd ~/Repositories' C-j
-	tmux send-keys -t ide 'clear' C-j
-	tmux split-window -v -p 33
-	tmux send-keys -t ide 'cd ~/Repositories' C-j
+	tmux new-session -s ide -d &&
+	tmux send-keys -t ide 'cd ~/Repositories' C-j &&
+	tmux send-keys -t ide 'ranger' C-j &&
+	tmux split-window -h -p 77 &&
+	tmux send-keys -t ide 'cd ~/Repositories' C-j &&
+	tmux send-keys -t ide 'clear' C-j &&
+	tmux split-window -v -p 33 &&
+	tmux send-keys -t ide 'cd ~/Repositories' C-j &&
 	tmux send-keys -t ide 'clear' C-j
 	tmux attach -t ide
 }
@@ -112,7 +112,6 @@ alias wifi_connect='sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supp
 alias mpc='mpd; ncmpcpp'
 alias mpk='mpd --kill'
 alias lsusb='lsblk'
-alias back='tmux attach -t ide'
 alias battery='cat /sys/class/power_supply/$BAT/capacity /sys/class/power_supply/$BAT/status'
 alias vibright='sudo vim /sys/class/backlight/$BACKLIGHT/brightness'
 alias poweroff='sudo poweroff'
