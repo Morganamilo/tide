@@ -99,9 +99,9 @@ wifi_add ()
 	echo "Enter the SSID:"
 	read SSID
 	echo "Enter the passphrase:"
-	read -s PASS
+	read PASS
 	echo "Adding Wi-Fi network..."
-	sudo wpa_passphrase $SSID $PASS | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf &&
+	sudo wpa_passphrase "$SSID" "$PASS" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf &&
 	echo "Added Wi-Fi network succesfully!"
 }
 
