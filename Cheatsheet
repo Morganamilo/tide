@@ -64,8 +64,7 @@ N      =>  Moves to the previous instance of the search
 15     =>  Jumps 15 lines
 :15    =>  Go to line 15
 
-%s/text/new text/g  =>  Replaces all text in the document with new text
-
+:%s/text/new text/g  =>  Replaces all text in the document with new text
 
 :syntax on/off        =>  Enables or disables syntax colors
 :set number/nonumber  =>  Enables or disables line numbering
