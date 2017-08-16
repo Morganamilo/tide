@@ -3,7 +3,7 @@
 
 sudo pacman -Rs vim
 sudo pacman -S w3m python-pip xorg xorg-xinit xorg-setxkbmap ttf-dejavu i3status i3lock dmenu rxvt-unicode screenfetch scrot feh imagemagick ffmpeg gvim qutebrowser
-sudo pip3 install pywal
+sudo pip install pywal
 cd ~/Repositories
 git clone https://aur.archlinux.org/i3-gaps.git
 cd i3-gaps
