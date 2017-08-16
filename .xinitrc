@@ -54,5 +54,5 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 setxkbmap -layout "YOUR KEYBOARD LAYOUT HERE" &
-feh --bg-scale "PATH TO YOUR WALLPAPER HERE" &
+wal -i "~/.wallpapers" &
 exec i3

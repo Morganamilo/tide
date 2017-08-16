@@ -14,7 +14,9 @@ Terminal IDE: A minimal pre-configured Void/Arch install with optional GUI.
 
 Enjoy! You can use the update script (which will work for both distros) if you want to keep up with the new changes in this repository.
 
-If you wish you can also use the upgrade2gui script of your distro to get a GUI mode with better support for images, videos and web browsing. After that make sure to do the proper changes in the very end of the .xinitrc file to fit your needs.
+If you wish you can also use the upgrade2gui script of your distro to get a GUI mode with better support for images, videos and web browsing. After that make sure to do the proper changes in the very end of the .xinitrc file to fit your keyboard layout.
+
+The colorscheming is done automatically based on your current wallpaper. To use wallpapers, simply put as many wallpapers as you want in the ".wallpapers" folder and one of them will be randomly selected upon starting the X server.
 
 ## Usage
 
