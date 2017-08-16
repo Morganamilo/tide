@@ -25,6 +25,7 @@ cp -r .gnupg ~/
 cp -r .mutt ~/
 cp -r .ncmpcpp ~/
 cp -r .newsbeuter ~/
+mkdir ~/.config/mpd/playlists
 sudo cp extrakeys /etc/
 cd void/root
 sudo cp issue rc.local /etc/
