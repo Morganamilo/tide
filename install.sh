@@ -88,4 +88,5 @@ echo "WIRELESS='$WIRELESS'" >> .bashrc+
 echo "sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" >> $rc_local
 
 # Finally, move this repository to the proper folder
-mv ~/tide ~/Repositories
+cd ..
+mv tide ~/Repositories
