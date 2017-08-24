@@ -3,8 +3,7 @@
 
 ide  =>  Open tmux with pre-configured IDE
 
-sysinfo   =>  Display system information
-battery   =>  Show battery level
+bat       =>  Show battery level
 bright    =>  Show brightness menu
 vibright  =>  Edit brightness level
 lock      =>  Lock the screen with a password (logout tmux with "C-a + d" first)

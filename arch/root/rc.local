@@ -1,3 +1,0 @@
-#!/bin/bash
-#Place here the commands that will run at startup
-loadkeys /etc/extrakeys

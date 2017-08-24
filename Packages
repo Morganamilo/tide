@@ -1,0 +1,74 @@
+# List of packages installed in each module
+# Dependencies are not listed
+
+# Arch Name / Void Name
+# If there is no / then the name is the same
+
+# core
+base / base-system
+base-devel
+bc
+zip
+unzip
+wget
+htop
+iftop
+iotop
+powertop
+nethogs
+rkhunter
+vim
+ranger
+tmux
+rsync
+openssh
+sshfs / fuse-sshfs
+gnupg / gnupg2
+python / python3
+
+# cli
+mutt
+elinks
+irssi
+newsbeuter
+calcurse
+cmatrix
+
+# torrent
+rtorrent
+
+# music
+mpd
+ncmpcpp
+
+# youtube-dl
+youtube-dl
+
+# firewall
+ufw
+
+# powersaving
+tlp
+
+# gui
+w3m
+xorg
+i3status
+i3lock
+dmenu
+rxvt-unicode
+scrot
+screenfetch / screenFetch
+imagemagick / ImageMagick
+feh
+ffmpeg
+gvim
+python-pip
+pywal
+i3-gaps
+
+# virtualbox
+virtualbox
+
+# qutebrowser
+qutebrowser

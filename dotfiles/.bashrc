@@ -6,7 +6,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-source ~/.bashsys
+source ~/.bashrc+
 
 export EDITOR=vim
 export NNN_TMPFILE="/tmp/nnn"
@@ -112,7 +112,7 @@ alias wifi_connect='sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supp
 alias mpc='mpd; ncmpcpp'
 alias mpk='mpd --kill'
 alias lsusb='lsblk'
-alias battery='cat /sys/class/power_supply/$BAT/capacity /sys/class/power_supply/$BAT/status'
+alias bat='cat /sys/class/power_supply/$BATTERY/capacity /sys/class/power_supply/$BATTERY/status'
 alias vibright='sudo vim /sys/class/backlight/$BACKLIGHT/brightness'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
