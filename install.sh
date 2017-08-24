@@ -43,7 +43,7 @@ gui
 
 # Module that turns your server into a SSH server
 # Make sure you secure your system properly as this can open vulnerabilities
-# ssh-server
+# ssh_server
 
 # Module that installs VirtualBox
 # virtualbox
@@ -56,8 +56,7 @@ gui
 # Creates .bashrc+
 # This will be the file where you can customize your bash commands
 # The other .bashrc will be used by tide and you will be able to upgrade it to a newer version without messing up your hardware modules or your personal rice
-cd ~/
-touch .bashrc+
+touch ~/.bashrc+
 
 # Read the backlight module name of your hardware
 echo "Please input your backlight module, the name should be one of options below:"
@@ -74,10 +73,10 @@ echo "(Blank if there is no battery)"
 read BATTERY
 
 # Read the Wi-Fi module name of your hardware
-echo "Please input your Wi-Fi module, the name should be one of the options below:"
+echo "Your Wi-Fi will be enabled at startup now."
+echo "Please input your Wi-Fi module again, the name should be one of the options below:"
 ip address | grep "<"
 echo "Example names: wlan0, wps3s0, etc"
-echo "(Blank if there is no wireless card)"
 read WIRELESS
 
 # Append the module names to your .bashrc+
@@ -85,5 +84,8 @@ echo "BACKLIGHT='$BACKLIGHT'" >> .bashrc+
 echo "BATTERY='$BATTERY'" >> .bashrc+
 echo "WIRELESS='$WIRELESS'" >> .bashrc+
 
+# Enabled Wi-FI at startup
+echo "sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" >> $rc_local
+
 # Finally, move this repository to the proper folder
-mv tide ~/Repositories
+mv ~/tide ~/Repositories

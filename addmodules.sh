@@ -11,6 +11,6 @@
 # firewall
 # powersaving
 # gui
-# ssh-server
+# ssh_server
 # virtualbox
 # qutebrowser

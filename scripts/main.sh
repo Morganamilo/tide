@@ -8,7 +8,7 @@ read DISTRO
 source scripts/$DISTRO.sh
 
 # Syncs the distro repositories to ensure packages will download correctly
-$pkgupdate
+$pkgupdate &&
 
 core () {
 
@@ -144,7 +144,7 @@ i3-gaps-install
 
 }
 
-ssh-server () {
+ssh_server () {
 
 # Enables SSH daemon at startup and opens port 22 if you have firewall enabled
 $startup sshd &&
