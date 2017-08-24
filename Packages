@@ -1,74 +1,75 @@
 # List of packages installed in each module
 # Dependencies are not listed
 
-# Arch Name / Void Name
+# Arch Name / Void Name  -  Description
 # If there is no / then the name is the same
 
 # core
-base / base-system
-base-devel
-bc
-zip
-unzip
-wget
-htop
-iftop
-iotop
-powertop
-nethogs
-rkhunter
-vim
-ranger
-tmux
-rsync
-openssh
-sshfs / fuse-sshfs
-gnupg / gnupg2
-python / python3
+base / base-system  -  Essential system utilities
+base-devel  -  Essential utilities for making packages
+bc  -  Calculator
+zip  -  ZIP compression utility
+unzip  -  ZIP decompression utility
+wget  -  Download utility
+htop  -  System analyzer
+iftop  -  Analyzes IPs that are connecting to the machine
+iotop  -  Disk activity analyzer
+powertop  -  Power consumption analyzer
+nethogs  -  Analyzes processes that are connecting to the network
+rkhunter  -  Searches for rootkits in the system
+vim  -  Editor
+ranger  -  File manager
+tmux  -  Terminal multiplexer
+rsync  -  File transfer utility, mainly used for backups
+openssh  -  SSH tools
+sshfs / fuse-sshfs  -  Mounts SSH servers in your computer as filesystems
+gnupg / gnupg2  -  Encryption suite
+python / python3  -  Python programming language
+nnn  -  Lightweight and blazing fast file explorer, great replacement for CD/LS commands
 
 # cli
-mutt
-elinks
-irssi
-newsbeuter
-calcurse
-cmatrix
+mutt  -  Email client
+elinks  -  Web browser
+irssi  -  IRC client
+newsbeuter  -  RSS feed client
+calcurse  -  Calendar application
+cmatrix  -  Eye candy for the terminal
 
 # torrent
-rtorrent
+rtorrent  -  Torrent application
 
 # music
-mpd
-ncmpcpp
+mpd  -  Music player daemon
+ncmpcpp  -  Music player client for mpd with advanced features
 
 # youtube-dl
-youtube-dl
+youtube-dl  -  Downloads media from hundreds of different media websites
 
 # firewall
-ufw
+ufw  -  Uncomplicated firewall
 
 # powersaving
-tlp
+tlp  -  Power saving mode
 
 # gui
-w3m
-xorg
-i3status
-i3lock
-dmenu
-rxvt-unicode
-scrot
-screenfetch / screenFetch
-imagemagick / ImageMagick
-feh
-ffmpeg
-gvim
-python-pip
-pywal
-i3-gaps
+w3m  -  Image previewer for the terminal
+xorg  -  X window server
+i3status  -  i3 status bar
+i3lock  -  i3 screen lock
+dmenu  -  Quickly launch applications
+rxvt-unicode  -  Terminal
+scrot  -  Screenshot utility
+screenfetch / screenFetch  -  Display system information
+imagemagick / ImageMagick  -  Image suite for converting, editing and composing images
+feh  -  Image viewer
+ffmpeg  -  Video suite for streaming, converting and encoding videos
+gvim  -  Vim but with system clipboard support
+python-pip  -  Python package manager (necessary for installing pywal)
+pywal  -  Automatic colorschemes based on the current wallpaper
+i3-gaps  -  i3 window manager with gaps
 
 # virtualbox
-virtualbox
+virtualbox  -  Virtual machine utility
 
 # qutebrowser
-qutebrowser
+qutebrowser  -  Vim-like GUI web browser
