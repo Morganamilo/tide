@@ -58,34 +58,17 @@ gui
 # The other .bashrc will be used by tide and you will be able to upgrade it to a newer version without messing up your hardware modules or your personal rice
 touch ~/.bashrc+
 
-# Read the backlight module name of your hardware
-echo "Please input your backlight module, the name should be one of options below:"
-ls /sys/class/backlight
-echo "Example names: acpi_video0, intel_backlight, nv_backlight, etc"
-echo "(Blank if there is no monitor)"
-read BACKLIGHT
+# Make backlight commands functional
+# Comment if there is no monitor
+backlight_module
 
-# Read the battery module name of your hardware
-echo "Please input your battery module, the name should be one of the options below:"
-ls /sys/class/power_supply
-echo "Example names: BAT0, BAT1, etc"
-echo "(Blank if there is no battery)"
-read BATTERY
+# Make battery commands functional
+# Comment if there is no battery
+battery_module
 
-# Read the Wi-Fi module name of your hardware
-echo "Your Wi-Fi will be enabled at startup now."
-echo "Please input your Wi-Fi module again, the name should be one of the options below:"
-ip address | grep "<"
-echo "Example names: wlan0, wps3s0, etc"
-read WIRELESS
-
-# Append the module names to your .bashrc+
-echo "BACKLIGHT='$BACKLIGHT'" >> .bashrc+
-echo "BATTERY='$BATTERY'" >> .bashrc+
-echo "WIRELESS='$WIRELESS'" >> .bashrc+
-
-# Enabled Wi-FI at startup
-echo "sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" >> $rc_local
+# Make Wi-FI commands functional
+# Comment if there is no wireless card
+wireless_module
 
 # Finally, move this repository to the proper folder
 cd ..

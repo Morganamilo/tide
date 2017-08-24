@@ -168,3 +168,40 @@ $pkginstall $qutebrowser
 cp -r dotfiles/.config/qutebrowser ~/.config
 
 }
+
+backlight_module () {
+
+# Implement the backlight module name of your hardware to your .bashrc+
+echo "Please input your backlight module, the name should be one of options below:"
+ls /sys/class/backlight
+echo "Example names: acpi_video0, intel_backlight, nv_backlight, etc"
+read BACKLIGHT
+echo "BACKLIGHT='$BACKLIGHT'" >> ~/.bashrc+
+
+}
+
+battery_module () {
+
+# Implement the battery module name of your hardware to your .bashrc+
+echo "Please input your battery module, the name should be one of the options below:"
+ls /sys/class/power_supply
+echo "Example names: BAT0, BAT1, etc"
+read BATTERY
+echo "BATTERY='$BATTERY'" >> ~/.bashrc+
+
+}
+
+wireless_module () {
+
+# Implement the Wi-Fi module name of your hardware to your .bashrc+
+echo "Your Wi-Fi will be enabled at startup now."
+echo "Please input your Wi-Fi module again, the name should be one of the options below:"
+ip address | grep "<"
+echo "Example names: wlan0, wps3s0, etc"
+read WIRELESS
+echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
+
+# Enable Wi-FI at startup
+echo "sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" >> $rc_local
+
+}
