@@ -1,15 +1,21 @@
 #!/bin/bash
 # This is the installation script, which installs all chosen modules
 # It should only be run once in every machine, if you need to install any additional modules later then use addmodules.sh
+# Warning: Do not run this script as root user
 
 # First let's grab the modules source from the script below
 source scripts/main.sh
+
+# And also create .bashrc+
+# This will be the file where you can customize your bash commands
+# The other .bashrc will be used by tide and you will be able to upgrade it to a newer version without messing up your hardware modules or your personal rice
+touch ~/.bashrc+
 
 # The installation of the modules will now begin
 # You can customize which modules are going to be installed or not by commenting/uncommenting them below
 # For the sake of sane and minimalistic defaults, some modules are disabled by default, but you can enable them if you feel the necessity
 
-# Modules
+## Software Modules
 
 # Most basic module which installs only the bare essentials for a functional Linux server
 # This is the most essential module so it shouldn´t be disabled
@@ -51,12 +57,7 @@ gui
 # Module that installs Qutebrowser with custom configuration for improved online privacy
 # qutebrowser
 
-# Those were all the modules, now let´s set up a few last things
-
-# Creates .bashrc+
-# This will be the file where you can customize your bash commands
-# The other .bashrc will be used by tide and you will be able to upgrade it to a newer version without messing up your hardware modules or your personal rice
-touch ~/.bashrc+
+## Hardware Modules
 
 # Make backlight commands functional
 # Comment if there is no monitor
