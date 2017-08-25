@@ -5,7 +5,6 @@
 export pkgupdate="sudo xbps-install -Suv"
 export pkginstall= "sudo xbps-install"
 export pkgremove="sudo xbps-remove -R"
-export startup="sudo ln -s /etc/sv/$1 /var/service"
 export rc_local="/etc/rc.local"
 
 # Secondary exports
@@ -22,6 +21,12 @@ export qutebrowser="qutebrowser dbus"
 # Primary functions
 
 # Secondary functions
+
+startup () {
+
+sudo ln -s /etc/sv/$1 /var/service
+
+}
 
 setup () {
 

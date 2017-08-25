@@ -5,7 +5,6 @@
 export pkgupdate="sudo pacman -Syu"
 export pkginstall="sudo pacman -S"
 export pkgremove="sudo pacman -Rs"
-export startup="sudo systemctl enable"
 export rc_local="/usr/local/sbin/rc.local"
 
 # Secondary exports
@@ -22,6 +21,12 @@ export qutebrowser="qutebrowser"
 # Primary functions
 
 # Secondary functions
+
+startup () {
+
+sudo systemctl enable $1
+
+}
 
 setup () {
 

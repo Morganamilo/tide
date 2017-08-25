@@ -111,7 +111,7 @@ firewall () {
 
 # Installs ufw and enable it at startup
 $pkginstall ufw
-$startup ufw
+startup ufw
 
 }
 
@@ -119,7 +119,7 @@ powersaving () {
 
 # Installs tlp and enable it at startup
 $pkginstall tlp
-$startup tlp
+startup tlp
 
 }
 
@@ -147,7 +147,7 @@ i3-gaps-install
 ssh_server () {
 
 # Enables SSH daemon at startup and opens port 22 if you have firewall enabled
-$startup sshd &&
+startup sshd &&
 sudo ufw allow ssh
 
 }
