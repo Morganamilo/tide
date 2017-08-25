@@ -3,7 +3,7 @@
 # It should only be run once in every machine, if you need to install any additional modules later then use addmodules.sh
 # Warning: Do not run this script as root user
 
-# First let's grab the modules source from the script below
+# First, let´s grab the modules source from the script below
 source scripts/main.sh
 
 # And also create .bashrc+
@@ -74,3 +74,6 @@ wireless_module
 # Finally, move this repository to the proper folder
 cd ..
 mv tide ~/Repositories
+
+# Call custom commands from your custom script (optional)
+source custom.sh
