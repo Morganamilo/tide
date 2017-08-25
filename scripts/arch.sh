@@ -45,22 +45,20 @@ $startup rc-local
 
 nnn-install () {
 
-cd ~/Repositories
 git clone https://aur.archlinux.org/nnn.git
 cd nnn
 makepkg -si
 cd ..
-cd ..
+mv nnn ~/Repositories
 
 }
 
 i3-gaps-install () {
 
-cd ~/Repositories
 git clone https://aur.archlinux.org/i3-gaps.git
 cd i3-gaps
 makepkg -si
 cd ..
-cd ..
+mv i3-gaps ~/Repositories
 
 }
