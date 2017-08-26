@@ -1,22 +1,22 @@
 #!/bin/bash
 # This script gather specific functions for Void Linux
 
-# Primary exports
-export pkgupdate="sudo xbps-install -Suv"
-export pkginstall= "sudo xbps-install"
-export pkgremove="sudo xbps-remove -R"
-export rc_local="/etc/rc.local"
+# Primary variables
+pkgupdate="sudo xbps-install -Suv"
+pkginstall= "sudo xbps-install"
+pkgremove="sudo xbps-remove -R"
+rc_local="/etc/rc.local"
 
-# Secondary exports
-export sshfs="fuse-sshfs"
-export gpg="gnupg2"
-export python="python3"
-export mutt="mutt cyrus-sasl-modules"
-export xorg="xorg"
-export screenfetch="screenFetch"
-export imagemagick="ImageMagick"
-export virtualbox="virtualbox-ose"
-export qutebrowser="qutebrowser dbus"
+# Secondary variables
+sshfs="fuse-sshfs"
+gpg="gnupg2"
+python="python3"
+mutt="mutt cyrus-sasl-modules"
+xorg="xorg"
+screenfetch="screenFetch"
+imagemagick="ImageMagick"
+virtualbox="virtualbox-ose"
+qutebrowser="qutebrowser dbus"
 
 # Primary functions
 
