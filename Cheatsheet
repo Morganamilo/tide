@@ -26,6 +26,8 @@ alsamixer  =>  Open the volume settings
 poweroff   =>  Power off the system
 reboot     =>  Reboot the system
 
+paclog  =>  Display your pacman history (Arch only)
+
 
 #vim
 

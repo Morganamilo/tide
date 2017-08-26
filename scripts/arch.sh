@@ -30,7 +30,7 @@ sudo systemctl enable $1
 
 setup () {
 
-echo "No specific distro configuration. Proceeding..."
+echo "alias paclog='cat /var/log/pacman.log | grep PACMAN'" >> ~/.bashrc+
 
 }
 
