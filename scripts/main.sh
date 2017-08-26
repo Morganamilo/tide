@@ -2,8 +2,9 @@
 # This script gather most general purpose functions
 
 # Calls distro specific exports and functions
-ls -d scripts/*/ | sed -e "s/\///g"
-echo "Please input which distribution you are currently using, the name should be one of the above options:"
+echo "Please input which distribution you are currently using, the name should be one of the below options, use only lowercase letters:"
+echo arch
+echo void
 read DISTRO
 source scripts/$DISTRO.sh
 
