@@ -203,6 +203,6 @@ read WIRELESS
 echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
 
 # Enable Wi-FI at startup
-echo "sudo wpa_supplicant -B -D wext -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" >> $rc_local
+echo "wpa_supplicant -B -D nl80211 -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local
 
 }

@@ -1,2 +1,3 @@
+#!/bin/bash
 # Place here your custom commands to be run at startup
 loadkeys /etc/extrakeys
