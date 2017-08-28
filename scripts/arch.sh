@@ -30,6 +30,10 @@ sudo systemctl enable $1
 
 setup () {
 
+# Enables dhcpcd at startup
+startup dhcpcd
+
+# Creates paclog alias for easy access to pacman´s log file
 echo "alias paclog='cat /var/log/pacman.log | grep PACMAN'" >> ~/.bashrc+
 
 }

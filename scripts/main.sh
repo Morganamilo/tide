@@ -56,6 +56,7 @@ mkdir ~/Code
 mkdir ~/Documents
 mkdir ~/Downloads
 mkdir ~/Mail
+mkdir ~/Pictures
 mkdir ~/Programs
 
 # Copies important documents to the system
@@ -201,6 +202,9 @@ ip address | grep "<"
 echo "Example names: wlan0, wps3s0, etc"
 read WIRELESS
 echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
+
+# Install iw and wpa_supplicant
+$pkginstall iw wpa_supplicant
 
 # Enable Wi-FI at startup
 echo "wpa_supplicant -B -D nl80211 -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local
