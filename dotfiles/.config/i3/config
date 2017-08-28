@@ -157,6 +157,10 @@ bar {
         status_command i3status
 }
 
+# Volume keybindings
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2dB-
+
 # Below there is configuration that is exclusive to i3-gaps
 
 # Remove titlebar and add borders using given amount of pixels
