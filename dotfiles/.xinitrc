@@ -48,11 +48,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-#twm &
-#xclock -geometry 50x50-1+1 &
-#xterm -geometry 80x50+494+51 &
-#xterm -geometry 80x20+494-0 &
-#exec xterm -geometry 80x66+0+0 -name login
-setxkbmap -layout "YOUR KEYBOARD LAYOUT HERE" &
-wal -i "~/.wallpapers" &
+# Sets the keyboard layout
+# Input your keyboard layout here (default is american)
+setxkbmap -layout us &
+
+# Sets wallpaper and automatic colorscheme using wal
+# If wal is not working for you, try feh instead
+wal -i ~/.wallpapers &
+
+# Starts window manager
 exec i3
