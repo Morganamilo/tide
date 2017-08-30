@@ -3,7 +3,7 @@
 
 # Primary variables
 pkgupdate="sudo xbps-install -Suv"
-pkginstall= "sudo xbps-install"
+pkginstall="sudo xbps-install"
 pkgremove="sudo xbps-remove -R"
 rc_local="/etc/rc.local"
 
