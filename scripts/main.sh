@@ -57,6 +57,7 @@ mkdir ~/Documents
 mkdir ~/Downloads
 mkdir ~/Mail
 mkdir ~/Pictures
+mkdir ~/Pictures/Screenshots
 mkdir ~/Programs
 
 # Copies important documents to the system

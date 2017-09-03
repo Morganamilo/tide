@@ -121,7 +121,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # lock i3 (using i3lock)
-bindsym $mod+shift+w exec --no-startup-id i3lock -n -c 454545
+bindsym $mod+Shift+w exec --no-startup-id i3lock -n -c 454545
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -160,6 +160,9 @@ bar {
 # Volume keybindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2dB-
+
+# PrintScreen
+bindsym Print exec --no-startup-id scrot ~/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png
 
 # Below there is configuration that is exclusive to i3-gaps
 
