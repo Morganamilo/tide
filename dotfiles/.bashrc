@@ -105,9 +105,9 @@ wifi_add ()
 	echo "Added Wi-Fi network succesfully!"
 }
 
-alias wifi_status='sudo iw $WIRELESS link'
+alias wifi_status='iw $WIRELESS link'
 alias wifi_list='sudo iw dev $WIRELESS scan | grep -i ssid'
-alias wifi_added='sudo cat /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wifi_added='cat /etc/wpa_supplicant/wpa_supplicant.conf'
 alias wifi_connect='sudo wpa_supplicant -B -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf'
 alias mpc='mpd; ncmpcpp'
 alias mpk='mpd --kill'

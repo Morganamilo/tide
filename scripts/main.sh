@@ -208,6 +208,6 @@ echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
 $pkginstall iw wpa_supplicant
 
 # Enable Wi-FI at startup
-echo "wpa_supplicant -B -D nl80211 -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local
+echo "wpa_supplicant -B -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local
 
 }
