@@ -42,7 +42,7 @@ logo
 rclocal
 
 # Installs core packages
-$pkginstall base-devel alsa-utils bc zip unzip wget htop iftop iotop powertop nethogs rkhunter vim ranger tmux rsync openssh $sshfs $gpg $python
+$pkginstall base-devel alsa-utils dosfstools bc zip unzip wget htop iftop iotop powertop nethogs rkhunter vim ranger tmux rsync openssh $sshfs $gpg $python
 
 # Installs nnn using custom method depending on the distribution
 nnn-install

@@ -69,7 +69,7 @@ formatusb ()
 	umount ~/USB &>/dev/null
 	lsblk
 	echo "Warning: This will delete all files in the drive!"
-	echo "Enter the drive name: (/dev/sdX)"
+	echo "Enter the drive partition name: (/dev/sdX1)"
 	read DRIVE
 	echo "Enter the new name for the device:"
 	read NAME

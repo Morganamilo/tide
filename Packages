@@ -8,6 +8,7 @@
 base / base-system  -  Essential system utilities
 base-devel  -  Essential utilities for making packages
 alsa-utils  -  Utilities for sound management
+dosfstools  -  Formats flash drives to FAT32 (Windows-compatible filesystem)
 git  -  Version control system
 bc  -  Calculator
 zip  -  ZIP compression utility
