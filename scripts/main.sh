@@ -147,6 +147,14 @@ i3-gaps-install
 
 }
 
+linux_lts () {
+
+# Installs LTS kernel and enable it in GRUB
+$pkginstall linux-lts
+grub-mkconfig -o /boot/grub/grub.cfg
+
+}
+
 ssh_server () {
 
 # Enables SSH daemon at startup and opens port 22 if you have firewall enabled

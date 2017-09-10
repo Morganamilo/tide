@@ -47,6 +47,10 @@ powersaving
 # Will give your CLI desktop a few more capabilities such as viewing images, watching videos and installing GUI applications
 gui
 
+# Module that installs LTS kernel and enable it
+# Can be used to make your system more stable and reliable
+# linux_lts
+
 # Module that turns your server into a SSH server
 # Make sure you secure your system properly as this can open vulnerabilities
 # ssh_server

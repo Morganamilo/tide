@@ -14,6 +14,7 @@ source scripts/main.sh
 # firewall
 # powersaving
 # gui
+# linux_lts
 # ssh_server
 # virtualbox
 # qutebrowser
