@@ -150,7 +150,7 @@ i3-gaps-install
 linux_lts () {
 
 # Installs LTS kernel and enable it in GRUB
-$pkginstall linux-lts
+$pkginstall $lts
 grub-mkconfig -o /boot/grub/grub.cfg
 
 }

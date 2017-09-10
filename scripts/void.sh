@@ -15,6 +15,7 @@ mutt="mutt cyrus-sasl-modules"
 xorg="xorg"
 screenfetch="screenFetch"
 imagemagick="ImageMagick"
+lts="linux-lts"
 virtualbox="virtualbox-ose"
 qutebrowser="qutebrowser dbus"
 
