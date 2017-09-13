@@ -43,12 +43,6 @@ sudo rm -r /var/service/sshd
 
 }
 
-logo () {
-
-sudo cp dotfiles/void-logo /etc/issue
-
-}
-
 rclocal () {
 
 sudo cp dotfiles/rc.local /etc/

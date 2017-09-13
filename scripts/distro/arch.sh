@@ -39,12 +39,6 @@ echo "alias paclog='cat /var/log/pacman.log | grep PACMAN'" >> ~/.bashrc+
 
 }
 
-logo () {
-
-sudo cp dotfiles/arch-logo /etc/issue
-
-}
-
 rclocal () {
 
 sudo cp dotfiles/rc.local /usr/local/sbin/

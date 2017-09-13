@@ -3,10 +3,9 @@
 
 # Calls distro specific variables and functions
 echo "Please input which distribution you are currently using, the name should be one of the below options, use only lowercase letters:"
-echo arch
-echo void
+ls scripts/distro | sed 's/\(.*\)\..*/\1/'
 read DISTRO
-source scripts/$DISTRO.sh
+source scripts/distro/$DISTRO.sh
 
 # Syncs the distro repositories to ensure packages will download correctly
 $pkgupdate &&
@@ -32,11 +31,11 @@ cd ..
 # Essential for Control and Shift keyboard commands on a no-GUI system
 sudo cp dotfiles/extrakeys /etc/
 
+# Implements your distribution logo at startup
+sudo cp dotfiles/$DISTRO-logo /etc/issue
+
 # Does some distro specific configuration if there is any
 setup
-
-# Uses custom method for implementing your distribution logo at startup
-logo
 
 # Uses custom method for implementing rc.local depending on the distribution
 rclocal
