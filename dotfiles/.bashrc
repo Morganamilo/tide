@@ -39,7 +39,8 @@ bright ()
 mntusb ()
 {
 	sudo mount /dev/sdb1 ~/USB || sudo mount /dev/sdc1 ~/USB &&
-	sudo ranger ~/USB &&
+	sudo chown -R $USER:$USER ~/USB &&
+	ranger ~/USB &&
 	echo "Don´t forget to unmount with umntusb once you´re done"
 }
 
