@@ -164,6 +164,7 @@ p    =>  Toggle pause/unpause track
 </>  =>  Play previous/next track
 -    =>  Decrease volume
 +    =>  Increase volume
+/    =>  Search for tracks
 u    =>  Update track database
 
 r  =>  Toggle repeat mode
@@ -172,6 +173,9 @@ z  =>  Toggle random mode
 n  =>  Move track down in the playlist
 m  =>  Move track up in the playlist
 S  =>  Save the playlist
+
+i  =>  Show song info
+e  =>  Edit song info
 
 
 #nnn
