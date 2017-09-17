@@ -157,8 +157,8 @@ mpk  =>  Stop music
 1 to 8  => Change visual mode
 \       => Switch between classic and alternative views
 
-Arrow Keys  =>  Browse through your tracks
-Enter       =>  Start playing the tracks
+Arrow Keys  =>  Browse through your tracks or playlists
+Enter       =>  Start playing the tracks or playlists
 
 p    =>  Toggle pause/unpause track
 </>  =>  Play previous/next track
@@ -168,6 +168,10 @@ u    =>  Update track database
 
 r  =>  Toggle repeat mode
 z  =>  Toggle random mode
+
+n  =>  Move track down in the playlist
+m  =>  Move track up in the playlist
+S  =>  Save the playlist
 
 
 #nnn

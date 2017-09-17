@@ -95,7 +95,7 @@ cp -r dotfiles/.ncmpcpp ~/
 
 # Creates music directories
 mkdir ~/Music
-mkdir ~/.config/mpd/playlists
+mkdir ~/.playlists
 
 # Installs music packages
 $pkginstall mpd ncmpcpp
