@@ -54,11 +54,9 @@ flashusb ()
 	umount ~/USB &>/dev/null
 	lsblk
 	echo "Warning: This will delete all files in the drive!"
-	echo "Enter the drive name: (/dev/sdX)"
-	read DRIVE
+	read -p "Enter the drive name (/dev/sdX):" DRIVE
 	ls
-	echo "Enter the ISO name:"
-	read ISO
+	read -p "Enter the ISO name:" ISO
 	sudo dd bs=4M if=$ISO of=$DRIVE status=progress &&
 	sync &&
 	echo "ISO flashed succesfully!"
@@ -69,10 +67,8 @@ formatusb ()
 	umount ~/USB &>/dev/null
 	lsblk
 	echo "Warning: This will delete all files in the drive!"
-	echo "Enter the drive partition name: (/dev/sdX1)"
-	read DRIVE
-	echo "Enter the new name for the device:"
-	read NAME
+	read -p "Enter the drive partition name (/dev/sdX1):" DRIVE
+	read -p "Enter the new name for the device:" NAME
 	sudo mkfs.vfat -n '$NAME' -I $DRIVE &&
 	sync &&
 	echo "Drive formatted succesfully!"
@@ -96,10 +92,8 @@ lock ()
 
 wifi_add ()
 {
-	echo "Enter the SSID:"
-	read SSID
-	echo "Enter the passphrase:"
-	read PASS
+	read -p "Enter the SSID:" SSID
+	read -p "Enter the passphrase:" PASS
 	echo "Adding Wi-Fi network..."
 	sudo wpa_passphrase "$SSID" "$PASS" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf >/dev/null &&
 	echo "Added Wi-Fi network succesfully!"

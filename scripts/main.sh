@@ -2,9 +2,9 @@
 # This script gather most general purpose functions
 
 # Calls distro specific variables and functions
-echo "Please input which distribution you are currently using, the name should be one of the below options, use only lowercase letters:"
+echo "Please input which distribution you are currently using, the name should be one of the below options, use only lowercase letters"
 ls scripts/distro | sed 's/\(.*\)\..*/\1/'
-read DISTRO
+read -p "Distribution:" DISTRO
 source scripts/distro/$DISTRO.sh
 
 # Syncs the distro repositories to ensure packages will download correctly
@@ -185,10 +185,10 @@ cp -r dotfiles/.config/qutebrowser ~/.config
 backlight_module () {
 
 # Implement the backlight module name of your hardware to your .bashrc+
-echo "Please input your backlight module, the name should be one of options below:"
+echo "Please input your backlight module, the name should be one of options below"
 ls /sys/class/backlight
 echo "Example names: acpi_video0, intel_backlight, nv_backlight, etc"
-read BACKLIGHT
+read -p "Backlight module:" BACKLIGHT
 echo "BACKLIGHT='$BACKLIGHT'" >> ~/.bashrc+
 
 }
@@ -196,10 +196,10 @@ echo "BACKLIGHT='$BACKLIGHT'" >> ~/.bashrc+
 battery_module () {
 
 # Implement the battery module name of your hardware to your .bashrc+
-echo "Please input your battery module, the name should be one of the options below:"
+echo "Please input your battery module, the name should be one of the options below"
 ls /sys/class/power_supply
 echo "Example names: BAT0, BAT1, etc"
-read BATTERY
+read -p "Battery module:" BATTERY
 echo "BATTERY='$BATTERY'" >> ~/.bashrc+
 
 }
@@ -208,10 +208,10 @@ wireless_module () {
 
 # Implement the Wi-Fi module name of your hardware to your .bashrc+
 echo "Your Wi-Fi will be enabled at startup now."
-echo "Please input your Wi-Fi module again, the name should be one of the options below:"
+echo "Please input your Wi-Fi module again, the name should be one of the options below"
 ip address | grep "<"
 echo "Example names: wlan0, wps3s0, etc"
-read WIRELESS
+read -p "Wi-Fi module:" WIRELESS
 echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
 
 # Install iw and wpa_supplicant
