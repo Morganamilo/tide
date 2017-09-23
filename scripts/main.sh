@@ -35,7 +35,7 @@ sudo cp dotfiles/extrakeys /etc/
 sudo cp dotfiles/$DISTRO-logo /etc/issue
 
 # Implements mount permissions for your normal user
-echo "/dev/sdb1	/home/$USER/USB	ext4,btrfs,ntfs,vfat ro,user,noauto" | sudo tee -a /etc/fstab >/dev/null
+echo "/dev/sdb1	/home/$USER/USB	ext4,btrfs,ntfs,vfat user,noauto" | sudo tee -a /etc/fstab >/dev/null
 
 # Does some distro specific configuration if there is any
 setup
