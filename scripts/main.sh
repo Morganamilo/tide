@@ -34,6 +34,9 @@ sudo cp dotfiles/extrakeys /etc/
 # Implements your distribution logo at startup
 sudo cp dotfiles/$DISTRO-logo /etc/issue
 
+# Implements mount permissions for your normal user
+echo "/dev/sdb1	/home/$USER/USB	ext4,btrfs,ntfs,vfat ro,user,noauto" | sudo tee -a /etc/fstab >/dev/null
+
 # Does some distro specific configuration if there is any
 setup
 
@@ -215,6 +218,6 @@ echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
 $pkginstall iw wpa_supplicant
 
 # Enable Wi-FI at startup
-echo "wpa_supplicant -B -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local
+echo "wpa_supplicant -B -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local >/dev/null
 
 }

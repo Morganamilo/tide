@@ -38,15 +38,14 @@ bright ()
 
 mntusb ()
 {
-	sudo mount /dev/sdb1 ~/USB || sudo mount /dev/sdc1 ~/USB &&
-	sudo chown -R $USER:$USER ~/USB &&
+	mount ~/USB &&
 	ranger ~/USB &&
 	echo "Don´t forget to unmount with umntusb once you´re done"
 }
 
 umntusb ()
 {
-	sudo umount ~/USB &&
+	umount ~/USB &&
 	echo "Unmounted successfully"
 }
 
@@ -102,7 +101,7 @@ wifi_add ()
 	echo "Enter the passphrase:"
 	read PASS
 	echo "Adding Wi-Fi network..."
-	sudo wpa_passphrase "$SSID" "$PASS" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf &&
+	sudo wpa_passphrase "$SSID" "$PASS" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf >/dev/null &&
 	echo "Added Wi-Fi network succesfully!"
 }
 
