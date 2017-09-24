@@ -23,6 +23,17 @@ qutebrowser="qutebrowser"
 
 # Secondary functions
 
+aur () {
+	cat PKGBUILD
+	read -p "Are you sure about this PKGBUILD? Can I proceed? (y/n)?" CHOICE
+	case "$CHOICE" in
+		Y|y|yes ) makepkg -si;;
+		N|n|no ) echo "Alright. This package's installation will be skipped for now";;
+		* ) echo "Invalid answer. Please try again"
+		    aur;;
+	esac
+}
+
 startup () {
 
 sudo systemctl enable $1
@@ -51,7 +62,7 @@ nnn-install () {
 
 git clone https://aur.archlinux.org/nnn.git
 cd nnn
-makepkg -si
+aur
 cd ..
 mv nnn ~/Repositories
 
@@ -61,7 +72,7 @@ i3-gaps-install () {
 
 git clone https://aur.archlinux.org/i3-gaps.git
 cd i3-gaps
-makepkg -si
+aur
 cd ..
 mv i3-gaps ~/Repositories
 
