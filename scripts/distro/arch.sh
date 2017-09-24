@@ -2,9 +2,9 @@
 # This script gather specific functions for Arch Linux
 
 # Primary variables
-pkgupdate="sudo pacman -Syu"
-pkginstall="sudo pacman -S"
-pkgremove="sudo pacman -Rs"
+pkgupdate="sudo pacman -Syu --noconfirm"
+pkginstall="sudo pacman -S --noconfirm"
+pkgremove="sudo pacman -Rs --noconfirm"
 rc_local="/usr/local/sbin/rc.local"
 
 # Secondary variables

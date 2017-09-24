@@ -2,9 +2,9 @@
 # This script gather specific functions for Void Linux
 
 # Primary variables
-pkgupdate="sudo xbps-install -Suv"
-pkginstall="sudo xbps-install"
-pkgremove="sudo xbps-remove -R"
+pkgupdate="sudo xbps-install -Suy"
+pkginstall="sudo xbps-install -y"
+pkgremove="sudo xbps-remove -Ry"
 rc_local="/etc/rc.local"
 
 # Secondary variables
