@@ -54,7 +54,7 @@ rclocal () {
 
 sudo cp dotfiles/rc.local /usr/local/sbin/
 sudo cp dotfiles/rc-local.service /etc/systemd/system
-$startup rc-local
+startup rc-local
 
 }
 

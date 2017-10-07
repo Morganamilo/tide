@@ -75,9 +75,9 @@ battery_module
 # Comment if there is no wireless card
 wireless_module
 
+# Call custom commands from your custom script (optional)
+source custom.sh
+
 # Finally, move this repository to the proper folder
 cd ..
 mv tide ~/Repositories
-
-# Call custom commands from your custom script (optional)
-source custom.sh
