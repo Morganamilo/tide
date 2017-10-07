@@ -25,11 +25,12 @@ qutebrowser="qutebrowser"
 
 aur () {
 	cat PKGBUILD
-	read -p "Are you sure about this PKGBUILD? Can I proceed? (y/n)?" CHOICE
+	read -p "Is everything okay with this PKGBUILD? Can I proceed? (y/n)?" CHOICE
 	case "$CHOICE" in
 		Y|y|yes ) makepkg -si;;
 		N|n|no ) echo "Alright. This package's installation will be skipped for now";;
 		* ) echo "Invalid answer. Please try again"
+		    sleep 1.5
 		    aur;;
 	esac
 }
