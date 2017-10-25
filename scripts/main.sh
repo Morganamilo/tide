@@ -73,7 +73,7 @@ cp -r dotfiles/.mutt ~/
 cp -r dotfiles/.newsbeuter ~/
 
 # Installs CLI packages
-$pkginstall elinks mutt irssi newsbeuter calcurse cmatrix
+$pkginstall elinks mutt $newsboat irssi calcurse cmatrix
 
 }
 
