@@ -3,10 +3,10 @@
 
 ide  =>  Open tmux with pre-configured IDE
 
-bat       =>  Show battery level
-bright    =>  Show brightness menu
-vibright  =>  Edit brightness level
-lock      =>  Lock the screen with a password (logout tmux with "C-a + d" first)
+bat        =>  Show battery level
+bright     =>  Show brightness menu
+setbright  =>  Edit brightness level
+lock       =>  Lock the screen with a password (logout tmux with "C-a + d" first)
 
 wifi_connect  =>  Start connection to any known wireless network
 wifi_status   =>  Show current status for wireless device

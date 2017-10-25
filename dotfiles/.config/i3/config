@@ -157,6 +157,10 @@ bar {
         status_command i3status
 }
 
+# Brightness keybindings
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+
 # Volume keybindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2dB-

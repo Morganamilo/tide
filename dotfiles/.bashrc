@@ -33,7 +33,12 @@ bright ()
 	cat /sys/class/backlight/$BACKLIGHT/actual_brightness
 	echo "Maximum:"
        	cat /sys/class/backlight/$BACKLIGHT/max_brightness
-	echo "Use vibright to change brightness"
+	echo "Use 'setbright NUMBER' to change brightness"
+}
+
+setbright ()
+{
+	echo "$1" | sudo tee /sys/class/backlight/$BACKLIGHT/brightness >/dev/null
 }
 
 mntusb ()
@@ -107,7 +112,6 @@ alias mpc='mpd; ncmpcpp'
 alias mpk='mpd --kill'
 alias lsusb='lsblk'
 alias bat='cat /sys/class/power_supply/$BATTERY/capacity /sys/class/power_supply/$BATTERY/status'
-alias vibright='sudo vim /sys/class/backlight/$BACKLIGHT/brightness'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
 alias gpg='gpg2'
