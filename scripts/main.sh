@@ -30,6 +30,7 @@ cd ..
 # Implements extra keys
 # Essential for Control and Shift keyboard commands on a no-GUI system
 sudo cp dotfiles/extrakeys /etc/
+service extrakeys "loadkeys /etc/extrakeys"
 
 # Implements your distribution logo at startup
 sudo cp dotfiles/$DISTRO-logo /etc/issue
@@ -39,9 +40,6 @@ echo "/dev/sdb1	/home/$USER/USB	ext4,btrfs,ntfs,vfat user,noauto" | sudo tee -a 
 
 # Does some distro specific configuration if there is any
 setup
-
-# Uses custom method for implementing rc.local depending on the distribution
-rclocal
 
 # Installs core packages
 $pkginstall base-devel alsa-utils dosfstools bc zip unzip wget htop iftop iotop powertop nethogs rkhunter vim ranger tmux rsync openssh $sshfs $gpg $python
@@ -219,6 +217,6 @@ echo "WIRELESS='$WIRELESS'" >> ~/.bashrc+
 $pkginstall iw wpa_supplicant
 
 # Enable Wi-FI at startup
-echo "wpa_supplicant -B -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf" | sudo tee -a $rc_local >/dev/null
+service wifi "wpa_supplicant -B -i $WIRELESS -c /etc/wpa_supplicant/wpa_supplicant.conf"
 
 }

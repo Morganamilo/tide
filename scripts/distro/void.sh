@@ -30,6 +30,12 @@ sudo ln -s /etc/sv/$1 /var/service
 
 }
 
+service () {
+
+echo "$2" | sudo tee -a /etc/rc.local >/dev/null
+
+}
+
 setup () {
 
 # Disables unused TTYs
@@ -41,12 +47,6 @@ sudo rm -r /var/service/agetty-tty6
 
 # Disables SSH daemon (it is enabled by default on Void)
 sudo rm -r /var/service/sshd
-
-}
-
-rclocal () {
-
-sudo cp dotfiles/rc.local /etc/
 
 }
 

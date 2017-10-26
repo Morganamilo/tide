@@ -42,6 +42,14 @@ sudo systemctl enable $1
 
 }
 
+service () {
+
+sudo cp dotfiles/example.service /etc/systemd/system/$1.service
+sudo sed -i "s/service/$2/g" /etc/systemd/system/$1.service
+startup $1
+
+}
+
 setup () {
 
 # Enables dhcpcd at startup
@@ -49,14 +57,6 @@ startup dhcpcd
 
 # Creates paclog alias for easy access to pacman´s log file
 echo "alias paclog='cat /var/log/pacman.log | grep PACMAN'" >> ~/.bashrc+
-
-}
-
-rclocal () {
-
-sudo cp dotfiles/rc.local /usr/local/sbin/
-sudo cp dotfiles/rc-local.service /etc/systemd/system
-startup rc-local
 
 }
 
