@@ -1,7 +1,8 @@
-[Unit]
-
 [Service]
+Type=oneshot
 ExecStart=/bin/service
+RemainAfterExit=yes
+StandardOutput=tty
 
 [Install]
 WantedBy=multi-user.target
