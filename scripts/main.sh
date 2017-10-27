@@ -32,6 +32,10 @@ cd ..
 sudo cp dotfiles/extrakeys /etc/
 service extrakeys "loadkeys /etc/extrakeys"
 
+# Implements TTY colorscheme
+sudo cp dotfiles/ttycolorscheme /etc/
+service ttycolorscheme "bash /etc/ttycolorscheme"
+
 # Implements your distribution logo at startup
 sudo cp dotfiles/$DISTRO-logo /etc/issue
 
