@@ -56,7 +56,7 @@ setup () {
 startup dhcpcd
 
 # Creates paclog alias for easy access to pacman´s log file
-echo "alias paclog='cat /var/log/pacman.log | grep PACMAN'" >> ~/.bashrc+
+echo "alias paclog='grep PACMAN /var/log/pacman.log | less +G'" >> ~/.bashrc+
 
 }
 
