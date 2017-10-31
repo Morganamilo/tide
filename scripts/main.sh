@@ -180,9 +180,6 @@ qutebrowser () {
 # Installs Qutebrowser
 $pkginstall $qutebrowser
 
-# Copies Qutebrowser dotfiles
-cp -r dotfiles/.config/qutebrowser ~/.config
-
 }
 
 backlight_module () {
