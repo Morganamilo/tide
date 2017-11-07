@@ -20,8 +20,9 @@ umntusb    =>  Unmount the USB drive storage
 flashusb   =>  Flash an ISO into the USB drive
 formatusb  =>  Format the USB drive
 
-startx     =>  Start the GUI mode
-alsamixer  =>  Open the volume settings
+startx      =>  Start the GUI mode
+alsamixer   =>  Open the volume settings
+screencast  =>  Record the screen (requires GUI)
 
 poweroff   =>  Power off the system
 reboot     =>  Reboot the system

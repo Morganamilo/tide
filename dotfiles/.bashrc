@@ -8,8 +8,10 @@ PS1='[\u@\h \W]\$ '
 
 source ~/.bashrc+
 
-export EDITOR=vim
-export NNN_TMPFILE="/tmp/nnn"
+export EDITOR='vim'
+export NNN_TMPFILE='/tmp/nnn'
+export DATE=$(date +"%Y-%m-%d-%H-%M-%S")
+export RESOLUTION=$(xdpyinfo | grep dimensions | awk '{print $2}')
 
 ide ()
 {
@@ -77,6 +79,11 @@ formatusb ()
 	sudo mkfs.vfat -n '$NAME' -I $DRIVE &&
 	sync &&
 	echo "Drive formatted succesfully!"
+}
+
+screencast ()
+{
+	ffmpeg -f x11grab -s $RESOLUTION -i :0.0 Videos/$DATE.mp4
 }
 
 n()
