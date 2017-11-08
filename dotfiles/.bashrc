@@ -10,8 +10,6 @@ source ~/.bashrc+
 
 export EDITOR='vim'
 export NNN_TMPFILE='/tmp/nnn'
-export DATE=$(date +"%Y-%m-%d-%H-%M-%S")
-export RESOLUTION=$(xdpyinfo | grep dimensions | awk '{print $2}')
 
 ide ()
 {
@@ -83,7 +81,7 @@ formatusb ()
 
 screencast ()
 {
-	ffmpeg -f x11grab -s $RESOLUTION -i :0.0 Videos/$DATE.mp4
+	ffmpeg -f x11grab -s $(xdpyinfo | grep dimensions | awk '{print $2}') -i :0.0 Videos/Screencast/$(date +"%Y-%m-%d-%H-%M-%S").mp4
 }
 
 n()

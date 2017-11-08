@@ -64,6 +64,7 @@ mkdir ~/Pictures
 mkdir ~/Pictures/Screenshots
 mkdir ~/Programs
 mkdir ~/Videos
+mkdir ~/Videos/Screencast
 
 # Copies important documents to the system
 cp 'Cheatsheet' 'Packages' ~/Documents
