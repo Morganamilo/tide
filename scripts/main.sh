@@ -60,11 +60,9 @@ mkdir ~/Code
 mkdir ~/Documents
 mkdir ~/Downloads
 mkdir ~/Mail
-mkdir ~/Pictures
-mkdir ~/Pictures/Screenshots
 mkdir ~/Programs
-mkdir ~/Videos
-mkdir ~/Videos/Screencast
+mkdir -p ~/Pictures/Screenshots
+mkdir -p ~/Videos/Screencast
 
 # Copies important documents to the system
 cp 'Cheatsheet' 'Packages' ~/Documents
@@ -83,8 +81,7 @@ $pkginstall elinks mutt $newsboat irssi calcurse cmatrix
 torrent () {
 
 # Creates torrent directories
-mkdir ~/Torrents
-mkdir ~/Torrents/.session
+mkdir -p ~/Torrents/.session
 
 # Copies torrent dotfiles
 cp dotfiles/.rtorrent.rc ~/
