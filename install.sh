@@ -55,6 +55,11 @@ gui
 # Make sure you secure your system properly as this can open vulnerabilities
 # ssh_server
 
+# Module that installs Firejail with custom Wine and Java profiles for improved privacy and security
+# Make sure you enable it if you are planning to use Wine or Java
+# Also make sure to customize the profiles in ~/.config/firejail to fit your needs
+# firejail
+
 # Module that installs VirtualBox
 # virtualbox
 

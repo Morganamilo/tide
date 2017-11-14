@@ -11,11 +11,13 @@ source scripts/main.sh
 # cli
 # torrent
 # music
+# youtube-dl
 # firewall
 # powersaving
 # gui
 # linux_lts
 # ssh_server
+# firejail
 # virtualbox
 # qutebrowser
 

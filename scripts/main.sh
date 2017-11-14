@@ -166,6 +166,20 @@ sudo ufw allow ssh
 
 }
 
+firejail () {
+
+# Copies firejail dotfiles
+cp -r dotfiles/.config/firejail ~/.config
+
+# Creates shell aliases for firejail programs
+echo "alias wine='firejail wine'" >> ~/.bashrc+
+echo "alias java='firejail java'" >> ~/.bashrc+
+
+# Installs firejail
+$pkginstall firejail
+
+}
+
 virtualbox () {
 
 # Installs VirtualBox
