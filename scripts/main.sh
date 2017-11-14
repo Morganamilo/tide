@@ -62,7 +62,7 @@ mkdir ~/Downloads
 mkdir ~/Mail
 mkdir ~/Programs
 mkdir -p ~/Pictures/Screenshots
-mkdir -p ~/Videos/Screencast
+mkdir -p ~/Videos/Screencasts
 
 # Copies important documents to the system
 cp 'Cheatsheet' 'Packages' ~/Documents
