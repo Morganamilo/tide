@@ -12,7 +12,6 @@ sshfs="sshfs"
 gpg="gnupg"
 python="python"
 mutt="mutt"
-newsboat="newsboat"
 xorg="xorg xorg-xinit xorg-setxkbmap ttf-dejavu"
 screenfetch="screenfetch"
 imagemagick="imagemagick"
@@ -51,9 +50,6 @@ startup $1
 }
 
 setup () {
-
-# Enables dhcpcd at startup
-startup dhcpcd
 
 # Creates paclog alias for easy access to pacman´s log file
 echo "alias paclog='grep PACMAN /var/log/pacman.log | less +G'" >> ~/.bashrc+

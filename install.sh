@@ -23,29 +23,29 @@ core
 
 # Module that installs general CLI user applications
 # Will turn your server into a capable personal desktop
-cli
+# cli
 
 # Module that installs torrenting application
 # Can be used for personal usage or for turning your server into a torrent seeder
-torrent
+# torrent
 
 # Module that installs music player applications
 # Can be used for personal usage or for turning your server into a music server
-music
+# music
 
 # Module that installs youtube-dl
 # Can be used for personal usage or for turning your server into a media-fetching server
-youtube-dl
+# youtube-dl
 
 # For enabling ufw (uncomplicated firewall) in your system
-firewall
+# firewall
 
 # For enabling tlp (laptop powersaving mode) in your system
-powersaving
+# powersaving
 
 # Module that installs GUI
 # Will give your CLI desktop a few more capabilities such as viewing images, watching videos and installing GUI applications
-gui
+# gui
 
 # Module that installs LTS kernel and enable it
 # Can be used to make your system more stable and reliable
@@ -70,15 +70,15 @@ gui
 
 # Make backlight commands functional
 # Comment if there is no monitor
-backlight_module
+# backlight_module
 
 # Make battery commands functional
 # Comment if there is no battery
-battery_module
+# battery_module
 
 # Make Wi-FI commands functional
 # Comment if there is no wireless card
-wireless_module
+# wireless_module
 
 # Call custom commands from your custom script (optional)
 source custom.sh

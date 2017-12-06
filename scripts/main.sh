@@ -71,10 +71,10 @@ cp 'Cheatsheet' 'Packages' ~/Documents
 cp -r dotfiles/.config/ranger ~/.config
 cp -r dotfiles/.elinks ~/
 cp -r dotfiles/.mutt ~/
-cp -r dotfiles/.newsbeuter ~/
+cp -r dotfiles/.newsboat ~/
 
 # Installs CLI packages
-$pkginstall elinks mutt $newsboat irssi calcurse cmatrix
+$pkginstall elinks mutt newsboat irssi calcurse cmatrix
 
 }
 
