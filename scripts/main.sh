@@ -46,7 +46,7 @@ echo "/dev/sdb1	/home/$USER/USB	ext4,btrfs,ntfs,vfat user,noauto" | sudo tee -a 
 setup
 
 # Installs core packages
-$pkginstall base-devel alsa-utils dosfstools bc zip unzip wget htop iftop iotop powertop nethogs rkhunter vim ranger tmux rsync openssh $sshfs $gpg $python
+$pkginstall base-devel alsa-utils dosfstools bc zip unzip wget htop iftop iotop powertop nethogs rkhunter vim ranger tmux borg rsync openssh $sshfs $gpg $python
 
 # Installs nnn using custom method depending on the distribution
 nnn-install

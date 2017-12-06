@@ -23,7 +23,8 @@ rkhunter  -  Searches for rootkits in the system
 vim  -  Editor
 ranger  -  File manager
 tmux  -  Terminal multiplexer
-rsync  -  File transfer utility, mainly used for backups
+borg  -  Incremental backup utility
+rsync  -  File transfer utility, mainly used for transferring files over SSH
 openssh  -  SSH tools
 sshfs / fuse-sshfs  -  Mounts SSH servers in your computer as filesystems
 gnupg / gnupg2  -  Encryption suite
