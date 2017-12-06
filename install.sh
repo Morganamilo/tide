@@ -13,7 +13,8 @@ touch ~/.bashrc+
 
 # The installation of the modules will now begin
 # You can customize which modules are going to be installed or not by commenting/uncommenting them below
-# For the sake of sane and minimalistic defaults, some modules are disabled by default, but you can enable them if you feel the necessity
+# For the sake of sane and minimalistic defaults, most modules are disabled by default, but you can enable them as needed
+# Also, be aware that all modules after the gui module require gui in order to work properly
 
 ## Software Modules
 
@@ -43,22 +44,25 @@ core
 # For enabling tlp (laptop powersaving mode) in your system
 # powersaving
 
-# Module that installs GUI
-# Will give your CLI desktop a few more capabilities such as viewing images, watching videos and installing GUI applications
-# gui
+# Module that turns your server into a SSH server
+# Make sure you secure your system properly as this can open vulnerabilities
+# ssh_server
 
 # Module that installs LTS kernel and enable it
 # Can be used to make your system more stable and reliable
 # linux_lts
 
-# Module that turns your server into a SSH server
-# Make sure you secure your system properly as this can open vulnerabilities
-# ssh_server
+# Module that installs GUI
+# Will give your CLI desktop a few more capabilities such as viewing images, watching videos and installing GUI applications
+# gui
 
 # Module that installs Firejail with custom Wine and Java profiles for improved privacy and security
 # Make sure you enable it if you are planning to use Wine or Java
 # Also make sure to customize the profiles in ~/.config/firejail to fit your needs
 # firejail
+
+# Module that installs office programs
+# office
 
 # Module that installs VirtualBox
 # virtualbox

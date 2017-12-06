@@ -16,6 +16,7 @@ xorg="xorg xorg-xinit xorg-setxkbmap ttf-dejavu"
 screenfetch="screenfetch"
 imagemagick="imagemagick"
 lts="linux-lts linux-lts-headers"
+texlive="texlive-core"
 virtualbox="virtualbox"
 qutebrowser="qutebrowser"
 

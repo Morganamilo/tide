@@ -180,6 +180,13 @@ $pkginstall firejail
 
 }
 
+office () {
+
+#Installs office programs
+$pkginstall pandoc $texlive mupdf
+
+}
+
 virtualbox () {
 
 # Installs VirtualBox

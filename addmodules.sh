@@ -14,10 +14,11 @@ source scripts/main.sh
 # youtube-dl
 # firewall
 # powersaving
-# gui
-# linux_lts
 # ssh_server
+# linux_lts
+# gui
 # firejail
+# office
 # virtualbox
 # qutebrowser
 

@@ -16,6 +16,7 @@ xorg="xorg"
 screenfetch="screenFetch"
 imagemagick="ImageMagick"
 lts="linux-lts"
+texlive="texlive-bin"
 virtualbox="virtualbox-ose"
 qutebrowser="qutebrowser dbus"
 

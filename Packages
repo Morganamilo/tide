@@ -72,6 +72,11 @@ python-pip  -  Python package manager (necessary for installing pywal)
 pywal  -  Automatic colorschemes based on the current wallpaper
 i3-gaps  -  i3 window manager with gaps
 
+# office
+pandoc  -  Universal document converter
+texlive-core / texlive-bin  -  Allows you to create PDFs using pandoc or LaTeX
+mupdf  -  PDF viewer
+
 # virtualbox
 virtualbox  -  Virtual machine utility
 
