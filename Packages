@@ -58,7 +58,7 @@ tlp  -  Power saving mode
 # gui
 w3m  -  Image previewer for the terminal
 xorg  -  X window server
-i3status  -  i3 status bar
+polybar  -  i3 status bar
 i3lock  -  i3 screen lock
 rofi  -  Quickly launch applications
 rxvt-unicode  -  Terminal
