@@ -60,10 +60,10 @@ w3m  -  Image previewer for the terminal
 xorg  -  X window server
 i3status  -  i3 status bar
 i3lock  -  i3 screen lock
-dmenu  -  Quickly launch applications
+rofi  -  Quickly launch applications
 rxvt-unicode  -  Terminal
-scrot  -  Screenshot utility
-screenfetch / screenFetch  -  Display system information
+maim  -  Screenshot utility
+neofetch / neoFetch  -  Display system information
 imagemagick / ImageMagick  -  Image suite for converting, editing and composing images
 feh  -  Image viewer
 ffmpeg  -  Video suite for streaming, converting and encoding videos
