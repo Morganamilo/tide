@@ -58,12 +58,12 @@ tlp  -  Power saving mode
 # gui
 w3m  -  Image previewer for the terminal
 xorg  -  X window server
-polybar  -  i3 status bar
+polybar  -  Status bar
 i3lock  -  i3 screen lock
 rofi  -  Quickly launch applications
 rxvt-unicode  -  Terminal
 maim  -  Screenshot utility
-neofetch / neoFetch  -  Display system information
+neofetch  -  Display system information
 imagemagick / ImageMagick  -  Image suite for converting, editing and composing images
 feh  -  Image viewer
 ffmpeg  -  Video suite for streaming, converting and encoding videos
